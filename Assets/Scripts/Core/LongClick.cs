@@ -10,6 +10,7 @@ public class LongClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private float _pointerDownTimer;
     private readonly float requiredHoldTime = 10f;
     [SerializeField] private float defParticle;
+    [SerializeField] private float plusDefParticle;
 
     private void Start()
     {
@@ -27,12 +28,12 @@ public class LongClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Reset();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (_pointerDown)
         {
             _pointerDownTimer += Time.deltaTime;
-            Particle.hSliderValue += 1;
+            Particle.hSliderValue += plusDefParticle;
             if (_pointerDownTimer >= requiredHoldTime)
             {
                 Reset();

@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseMenuPanel;
     public GameObject HomeCanvas;
     public GameObject GameCanvas;
-
+    
     public void PauseGame()
     {
         Time.timeScale = 0;

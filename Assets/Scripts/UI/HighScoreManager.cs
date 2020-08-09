@@ -4,7 +4,7 @@ using static UnityEngine.PlayerPrefs;
 
 public class HighScoreManager : MonoBehaviour
 {
-    [SerializeField] public Text distanceCount, highScore;
+    [SerializeField] private Text distanceCount, highScore;
 
     private void Start()
     {

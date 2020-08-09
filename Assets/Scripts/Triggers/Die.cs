@@ -13,13 +13,15 @@ public class Die : MonoBehaviour
     
     
     private MoneyManager _moneyManager;
+    private Camera _camera;
     private bool _died;
     private int _deathPoint;
     private int _deathCoins;
-
+    
     private void Start()
     {
         _moneyManager = GetComponent<MoneyManager>();
+        _camera = Camera.main;
     }
 
     public void PlayerDie()
@@ -32,7 +34,7 @@ public class Die : MonoBehaviour
 
             PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + _deathCoins);
             if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
-
+            _camera.orthographicSize = 3.6f;
             _died = true;
             
             Time.timeScale = 0;
@@ -51,7 +53,7 @@ public class Die : MonoBehaviour
 
     public void Reset()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene((SceneManager.GetActiveScene().name));
         Time.timeScale = 1;
     }
 }

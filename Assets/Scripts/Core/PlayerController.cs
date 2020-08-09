@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         _rb = GetComponent<Rigidbody2D>();
     }
 
