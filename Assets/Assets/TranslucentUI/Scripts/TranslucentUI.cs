@@ -147,7 +147,7 @@ namespace TranslucentUI
             if (tui != null) DestroyImmediate(tui);
         }
 
-
+        /*
         public void RemoveTranslucencyComponentFromChildren()
         {
             foreach (var image in GetComponentsInChildren<Image>())
@@ -158,7 +158,7 @@ namespace TranslucentUI
             }
 
             uiImages = GetComponentsInChildren<Image>();
-        }
+        }*/
 
         public void ApplyCameraProperties()
         {

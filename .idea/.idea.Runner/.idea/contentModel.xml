@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Unity Projects\Runner" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Assets" t="Include">
+          <e p="TextMesh Pro" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="LiberationSans - OFL.txt" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="LineBreaking Following Characters.txt" t="Include" />
+              <e p="LineBreaking Leading Characters.txt" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+                <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+                <e p="TMP_Bitmap.shader" t="Include" />
+                <e p="TMP_SDF Overlay.shader" t="Include" />
+                <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+                <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+                <e p="TMP_SDF-Mobile.shader" t="Include" />
+                <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+                <e p="TMP_SDF-Surface.shader" t="Include" />
+                <e p="TMP_SDF.shader" t="Include" />
+                <e p="TMP_Sprite.shader" t="Include" />
+                <e p="TMPro.cginc" t="Include" />
+                <e p="TMPro_Properties.cginc" t="Include" />
+                <e p="TMPro_Surface.cginc" t="Include" />
+              </e>
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="EmojiOne Attribution.txt" t="Include" />
+            </e>
+          </e>
+          <e p="TimeframeUI" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Helper" t="Include">
+                <e p="Attributes" t="Include">
+                  <e p="Vector2RangeAttributes.cs" t="Include" />
+                  <e p="Vector2RangeDrawer.cs" t="Include" />
+                </e>
+                <e p="Compatibilities" t="Include">
+                  <e p="NameofCompatibility.cs" t="Include" />
+                  <e p="Vector2IntCompatibility.cs" t="Include" />
+                </e>
+                <e p="Extensions" t="Include">
+                  <e p="EnumerableExtensions.cs" t="Include" />
+                  <e p="FieldInfoExtensions.cs" t="Include" />
+                  <e p="RectTransformExtensions.cs" t="Include" />
+                  <e p="SerializedPropertyExtensions.cs" t="Include" />
+                </e>
+                <e p="SerializedPropertyManager.cs" t="Include" />
+                <e p="TimeframeUI.Scripts.Helper.asmdef" t="Include" />
+              </e>
+              <e p="Stats.cs" t="Include" />
+              <e p="TimeframeUI.cs" t="Include" />
+              <e p="TimeframeUI.Scripts.asmdef" t="Include" />
+              <e p="TimeframeUIEditor.cs" t="Include" />
+            </e>
+            <e p="Tests" t="Include">
+              <e p="Editor" t="Include">
+                <e p="StatsTest.cs" t="Include" />
+                <e p="TimeframeUI.Tests.Editor.asmdef" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TranslucentUI" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TranslucencyEditor.cs" t="Include" />
+              <e p="TranslucentUICameraEditor.cs" t="Include" />
+              <e p="TranslucentUICameraMobileEditor.cs" t="Include" />
+              <e p="TranslucentUIEditor.cs" t="Include" />
+              <e p="TranslucentUIStartup.cs" t="Include" />
+            </e>
+            <e p="ExampleScenes" t="Include">
+              <e p="SceneResources" t="Include">
+                <e p="Rotate.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Resources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="CameraBlur.shader" t="Include" />
+                <e p="CameraBlurMobile.shader" t="Include" />
+                <e p="Translucency.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Translucency.cs" t="Include" />
+              <e p="TranslucentUI.cs" t="Include" />
+              <e p="TranslucentUICamera.cs" t="Include" />
+              <e p="TranslucentUICameraMobile.cs" t="Include" />
+              <e p="TranslucentUIGlobal.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="GitHub" t="Include">
+            <e p="Editor" t="Include">
+              <e p="credits.txt" t="Include" />
+              <e p="eula.txt" t="Include" />
+              <e p="ExtensionLoader.cs" t="Include" />
+              <e p="UnityAPIWrapper.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="Director.cs" t="Include" />
+            <e p="DistanceCounter.cs" t="Include" />
+            <e p="FpsCounter.cs" t="Include" />
+            <e p="FpsDisplay.cs" t="Include" />
+            <e p="GravityController.cs" t="Include" />
+            <e p="LongClick.cs" t="Include" />
+            <e p="MoneyManager.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+          <e p="Enviroment" t="Include">
+            <e p="ObjectDestroyer.cs" t="Include" />
+            <e p="Parallax.cs" t="Include" />
+            <e p="Particle.cs" t="Include" />
+            <e p="PlatformGenerator.cs" t="Include" />
+            <e p="PlatformManager.cs" t="Include" />
+            <e p="SawRotate.cs" t="Include" />
+          </e>
+          <e p="GameEvents.cs" t="Include" />
+          <e p="Spawners" t="Include">
+            <e p="CoinSpawner.cs" t="Include" />
+            <e p="RocketSpawner.cs" t="Include" />
+            <e p="TestManager.cs" t="Include" />
+          </e>
+          <e p="Triggers" t="Include">
+            <e p="Coin.cs" t="Include" />
+            <e p="Die.cs" t="Include" />
+            <e p="Rocket.cs" t="Include" />
+            <e p="Saw.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="HighScoreManager.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
+            <e p="ScalerController.cs" t="Include" />
+            <e p="StartGame.cs" t="Include" />
+            <e p="TabButton.cs" t="Include" />
+            <e p="TabGroup.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Extensions.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Runner.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TestsEditMode.csproj" t="IncludeRecursive" />
+      <e p="Timeframe.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\xavav\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\xavav\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Runner.-1702267810.00" t="ExcludeRecursive" />
+  </component>
+</project>

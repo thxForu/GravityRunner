@@ -31,7 +31,7 @@ namespace TranslucentUI
             if (myTarget.ApplyOnChildren)
                 myTarget.AddTranslucencyComponentOnChildren();
             else
-                myTarget.RemoveTranslucencyComponentFromChildren();
+                //myTarget.RemoveTranslucencyComponentFromChildren();
             GUILayout.Space(10);
             myTarget.mainCamera =
                 EditorGUILayout.ObjectField("MainCamera", myTarget.mainCamera, typeof(Camera), true) as Camera;

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace UI
 {
@@ -11,20 +9,20 @@ namespace UI
     {
         [SerializeField] private string gameScene;
         [SerializeField] private GameObject startUiScene;
+        [SerializeField] private UnityEvent changeGravity;
         private void Start()
         {
-            Time.timeScale = 0;
+            StartCoroutine(MovePlayer());
         }
+        
         public void AsyncStart()
         {
             StartCoroutine(LoadAsyncScene());
-            startUiScene.SetActive(false);
-                        
         }
 
         IEnumerator LoadAsyncScene()
         {
-
+            
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(gameScene);
 
             // Wait until the asynchronous scene fully loads
@@ -32,6 +30,15 @@ namespace UI
             {
                 yield return null;
                 
+            }
+        }
+
+        private IEnumerator MovePlayer()
+        {
+            while (true)
+            {
+                changeGravity.Invoke();
+                yield return new WaitForSeconds(Random.Range(0.2f, 1f));
             }
         }
     }
