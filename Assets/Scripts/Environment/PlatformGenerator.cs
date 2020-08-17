@@ -2,19 +2,18 @@
 
 public class PlatformGenerator : MonoBehaviour
 {
+    public Director Director;
+    public PlatformManager[] platformsM;
+
     private GameObject _newPlatform;
     private float _newPlatformPositon;
 
     private int _platformSelector;
     private float[] _platformsWidth;
-    public Director Director;
-    public float distanceMax;
-    public float distanceMin;
+    public float  distanceMin, distBetween, distanceMax;
 
-    public float distBetween;
     public Transform generationPotint;
 
-    public PlatformManager[] platformsM;
     public bool topPlatform;
 
     private void Start()

@@ -31,7 +31,7 @@ Shader "Custom/CameraBlurMobile"
 		v2f vert(appdata_img v)
 		{
 			v2f o;
-			half2 delta = half2(0.5h, 0.5h) * _MainTex_TexelSize.xy * _Radius;
+			half2 delta = half2(0.5, 0.5) * _MainTex_TexelSize.xy * _Radius;
 			half2 deltaInvertY = half2(delta.x, -delta.y);
 
 			o.vertex = UnityObjectToClipPos(v.vertex);

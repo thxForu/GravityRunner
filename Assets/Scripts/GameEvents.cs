@@ -12,7 +12,7 @@ public class GameEvents : MonoBehaviour
         current = this;
     }
 
-    public event  Action OnMoneyChange;
+    public event Action OnMoneyChange;
     
     public void MoneyChange()
     {

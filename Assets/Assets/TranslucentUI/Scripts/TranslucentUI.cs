@@ -189,13 +189,15 @@ namespace TranslucentUI
         private void Update()
         {
             if (ApplyOnChildren)
-            {
+            {/*
                 for (var i = 0; i < uiImages.Length; i++)
                 {
                     var translucency = uiImages[i].gameObject.GetComponent<Translucency>();
                     translucency.SetGreyScale(GreyScale);
                     translucency.SetBrightness(Brightness);
                 }
+                */
+                
             }
             else
             {
@@ -228,13 +230,15 @@ namespace TranslucentUI
                 }
             }
             if (ApplyOnChildren)
-            {
+            {/*
+            
                 for (var i = 0; i < uiImages.Length; i++)
                 {
                     var translucency = uiImages[i].gameObject.GetComponent<Translucency>();
                     translucency.SetGreyScale(GreyScale);
                     translucency.SetBrightness(Brightness);
-                }
+                }*/
+                
             }
             else
             {

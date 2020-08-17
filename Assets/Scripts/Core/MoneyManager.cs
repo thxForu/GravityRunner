@@ -19,7 +19,7 @@ public class MoneyManager : MonoBehaviour
     {
         Coins = value;
     }
-    public void AddCoins(int value)
+    public static void AddCoins(int value)
     {
         Coins += value;
     }

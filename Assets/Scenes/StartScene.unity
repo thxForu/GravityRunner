@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 747793959}
   - component: {fileID: 747793958}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BlurePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1289,8 +1289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0}
-  m_SizeDelta: {x: 123.89368, y: 110.23624}
+  m_AnchoredPosition: {x: 0.0000019073486, y: 0}
+  m_SizeDelta: {x: 106.72168, y: 110.23624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1040937625
 MonoBehaviour:
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4297203505398261690, guid: e06aec81554103e438090923aeea21af,
+  m_Sprite: {fileID: -5166432130525955749, guid: 2326873ff59a9b049aa82f8572360d9c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2176,14 +2176,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Director: {fileID: 1435422010}
-  distanceMax: 8
-  distanceMin: 5
-  distBetween: 0
-  generationPotint: {fileID: 806763473}
   platformsM:
   - {fileID: 755810877}
   - {fileID: 900825372}
   - {fileID: 368503477}
+  distanceMin: 5
+  distBetween: 0
+  distanceMax: 8
+  generationPotint: {fileID: 806763473}
   topPlatform: 0
 --- !u!1 &1533022056
 GameObject:
@@ -2327,14 +2327,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Director: {fileID: 1435422010}
-  distanceMax: 8
-  distanceMin: 5
-  distBetween: 0
-  generationPotint: {fileID: 806763473}
   platformsM:
   - {fileID: 755810877}
   - {fileID: 900825372}
   - {fileID: 368503477}
+  distanceMin: 5
+  distBetween: 0
+  distanceMax: 8
+  generationPotint: {fileID: 806763473}
   topPlatform: 1
 --- !u!1 &1739744138
 GameObject:

@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
         print(col.name);
         if (col.tag.Equals("Player"))
         {
-            MoneyManager.Coins += 1;
+            MoneyManager.AddCoins(1);
             GameEvents.current.MoneyChange();
             Destroy(gameObject);
         }

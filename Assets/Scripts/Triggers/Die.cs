@@ -6,17 +6,13 @@ using UnityEngine.UI;
 public class Die : MonoBehaviour
 {
     public GameObject diePanel;
-    public Text hightScoreText;
-    public Text scoreText;
-    public Text dieCoinsText;
-    public Text totalCoinsText;
+    public Text hightScoreText, scoreText, dieCoinsText, totalCoinsText;
     
     
     private MoneyManager _moneyManager;
     private Camera _camera;
     private bool _died;
-    private int _deathPoint;
-    private int _deathCoins;
+    private int _deathPoint, _deathCoins;
     
     private void Start()
     {
