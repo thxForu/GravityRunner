@@ -1,66 +1,69 @@
 ﻿using UnityEngine;
 
-public class PlatformGenerator : MonoBehaviour
+namespace Environment
 {
-    public Director Director;
-    public PlatformManager[] platformsM;
-
-    private GameObject _newPlatform;
-    private float _newPlatformPositon;
-
-    private int _platformSelector;
-    private float[] _platformsWidth;
-    public float  distanceMin, distBetween, distanceMax;
-
-    public Transform generationPotint;
-
-    public bool topPlatform;
-
-    private void Start()
+    public class PlatformGenerator : MonoBehaviour
     {
-        if (generationPotint == null) GameObject.Find("GenerationPoint");
-        _platformsWidth = new float[platformsM.Length];
+        public Director Director;
+        public PlatformManager[] platformsM;
 
-        for (var i = 0; i < platformsM.Length; i++)
-            _platformsWidth[i] = platformsM[i].platform.GetComponent<BoxCollider2D>().size.x;
-    }
+        private GameObject _newPlatform;
+        private float _newPlatformPositon;
 
-    private void FixedUpdate()
-    {
-        if (transform.position.x < generationPotint.position.x)
+        private int _platformSelector;
+        private float[] _platformsWidth;
+        public float  distanceMin, distBetween, distanceMax;
+
+        public Transform generationPotint;
+
+        public bool topPlatform;
+
+        private void Start()
         {
-            distBetween = Random.Range(distanceMin, distanceMax);
+            if (generationPotint == null) GameObject.Find("GenerationPoint");
+            _platformsWidth = new float[platformsM.Length];
 
-            _platformSelector = Random.Range(0, platformsM.Length);
-            _newPlatformPositon = _platformsWidth[_platformSelector] / 2 + distBetween;
-            transform.position = new Vector2(transform.position.x + _newPlatformPositon, transform.position.y);
-            SpawnPlatform();
+            for (var i = 0; i < platformsM.Length; i++)
+                _platformsWidth[i] = platformsM[i].platform.GetComponent<BoxCollider2D>().size.x;
         }
-    }
 
-    public void SpawnPlatform()
-    {
-        var chanceSaw = Director.GetChanceSaw();
-
-        if (topPlatform)
+        private void FixedUpdate()
         {
-            if (chanceSaw > 50)
-                _newPlatform = platformsM[_platformSelector].GetSaws();
-            else
-                _newPlatform = platformsM[_platformSelector].GetPlatform();
-            _newPlatform.transform.position = transform.position;
-            _newPlatform.transform.rotation = transform.rotation;
-            _newPlatform.SetActive(true);
+            if (transform.position.x < generationPotint.position.x)
+            {
+                 distBetween = Random.Range(distanceMin, distanceMax);
+
+                _platformSelector = Random.Range(0, platformsM.Length);
+                _newPlatformPositon = _platformsWidth[_platformSelector] / 2 + distBetween;
+                transform.position = new Vector2(transform.position.x + _newPlatformPositon, transform.position.y);
+                SpawnPlatform();
+            }
         }
-        else
+
+        public void SpawnPlatform()
         {
-            if (chanceSaw > 50)
-                _newPlatform = platformsM[_platformSelector].GetSaws();
+            var chanceSaw = Director.GetChanceSaw();
+
+            if (topPlatform)
+            {
+                if (chanceSaw > 50)
+                    _newPlatform = platformsM[_platformSelector].GetSaws();
+                else
+                    _newPlatform = platformsM[_platformSelector].GetPlatform();
+                _newPlatform.transform.position = transform.position;
+                _newPlatform.transform.rotation = transform.rotation;
+                _newPlatform.SetActive(true);
+            }
             else
-                _newPlatform = platformsM[_platformSelector].GetPlatform();
-            _newPlatform.transform.position = transform.position;
-            _newPlatform.transform.rotation = transform.rotation;
-            _newPlatform.SetActive(true);
+            {
+                if (chanceSaw > 50)
+                    _newPlatform = platformsM[_platformSelector].GetSaws();
+                else
+                    _newPlatform = platformsM[_platformSelector].GetPlatform();
+                _newPlatform.transform.position = transform.position;
+                _newPlatform.transform.rotation = transform.rotation;
+                _newPlatform.SetActive(true);
+            }
         }
     }
 }

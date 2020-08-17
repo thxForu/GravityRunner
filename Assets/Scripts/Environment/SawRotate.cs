@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
 
-[ExecuteInEditMode]
-public class SawRotate : MonoBehaviour
+namespace Environment
 {
-    [FormerlySerializedAs("SpeedRotation")]
-    public float speedRotation;
-
-    private void FixedUpdate()
+    [ExecuteInEditMode]
+    public class SawRotate : MonoBehaviour
     {
-        transform.Rotate(0, 0, speedRotation, Space.World);
+        [FormerlySerializedAs("SpeedRotation")]
+        public float speedRotation;
+
+        private void FixedUpdate()
+        {
+            transform.Rotate(0, 0, speedRotation, Space.World);
+        }
     }
 }
