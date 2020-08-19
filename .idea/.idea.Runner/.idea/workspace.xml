@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="Update resolution on background and others sprite &#10;Add start screen">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/SawRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/SawRotate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/rocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/rocket.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Particle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Parallax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,7 +75,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlurMobile.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/PlatformGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/ObjectDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Parallax.cs" />
@@ -90,9 +86,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Task/TaskManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Task/QuestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TaskManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
@@ -100,10 +94,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/SawRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +160,7 @@
       <workItem from="1597582789079" duration="6239000" />
       <workItem from="1597677491186" duration="10651000" />
       <workItem from="1597756509905" duration="3222000" />
-      <workItem from="1597838476282" duration="12557000" />
+      <workItem from="1597838476282" duration="15729000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -206,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597683925467" />
-    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1597846951779">
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1597871386343">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597846951779" />
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597871386343" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596127247424" />
     <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1597859719546">
       <screen x="1920" y="0" width="1920" height="1040" />

@@ -141,6 +141,7 @@
           <e p="Triggers" t="Include">
             <e p="Coin.cs" t="Include" />
             <e p="Die.cs" t="Include" />
+            <e p="DodgeComet.cs" t="Include" />
             <e p="Rocket.cs" t="Include" />
             <e p="Saw.cs" t="Include" />
           </e>

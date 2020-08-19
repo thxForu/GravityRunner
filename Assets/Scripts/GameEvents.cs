@@ -13,13 +13,17 @@ public class GameEvents : MonoBehaviour
     }
 
     public event Action OnMoneyChange;
+    public event Action OnDodgeComet;
     
     public void MoneyChange()
     {
-        if (OnMoneyChange != null)
-        {
-            OnMoneyChange();
-        }
+        OnMoneyChange?.Invoke();
+
     }
+    public void DodgeComet()
+    {
+        OnDodgeComet?.Invoke();
+    }
+    
 
 }

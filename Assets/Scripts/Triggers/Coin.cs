@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
 
     private void OnEnable()
     {
-        if (transform.position.y< -3.33f)
+        if (transform.position.y < -3.33f)
         {
             transform.position = new Vector2(transform.position.x,transform.position.y + 3.33f);
         }
