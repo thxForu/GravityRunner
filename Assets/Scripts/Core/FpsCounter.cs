@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class FpsCounter : MonoBehaviour
 {
-    [SerializeField]
-    private int frameRange = 60;
+    [SerializeField] private int frameRange = 60;
 
     private int[] _fpsBuffer;
     private int _fpsBufferIndex;
@@ -17,9 +16,8 @@ public class FpsCounter : MonoBehaviour
     void Update()
     {
         if (_fpsBuffer == null || frameRange != _fpsBuffer.Length)
-        {
             InitializeBuffer();
-        }
+        
         UpdateBuffer();
         CalculateFps();
     }
@@ -27,9 +25,7 @@ public class FpsCounter : MonoBehaviour
     private void InitializeBuffer()
     {
         if (frameRange <= 0)
-        {
             frameRange = 1;
-        }
 
         _fpsBuffer = new int[frameRange];
         _fpsBufferIndex = 0;
@@ -39,9 +35,8 @@ public class FpsCounter : MonoBehaviour
     {
         _fpsBuffer[_fpsBufferIndex++] = (int) (1f / Time.unscaledDeltaTime);
         if (_fpsBufferIndex >= frameRange)
-        {
             _fpsBufferIndex = 0;
-        }
+        
     }
 
     private void CalculateFps()
@@ -54,14 +49,9 @@ public class FpsCounter : MonoBehaviour
             int fps = _fpsBuffer[i];
             sum += fps;
             if (fps > highest)
-            {
                 highest = fps;
-            }
             else if (fps < lowest)
-            {
                 lowest = fps;
-            }
-            
         }
 
         HighestFPS = highest;

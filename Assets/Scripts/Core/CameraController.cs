@@ -2,23 +2,24 @@
 
 public class CameraController : MonoBehaviour
 {
-    private float distanceToMoveX;
+    private float _distanceToMoveX;
 
-    private Vector3 lastPosition;
+    private Vector3 _lastPosition;
     public PlayerController player;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerController>();
-        lastPosition = player.transform.position;
+        if (player is null)
+            player = FindObjectOfType<PlayerController>();
+        _lastPosition = player.transform.position;
     }
 
     private void FixedUpdate()
     {
-        distanceToMoveX = player.transform.position.x - lastPosition.x;
+        _distanceToMoveX = player.transform.position.x - _lastPosition.x;
 
-        transform.position = new Vector3(transform.position.x + distanceToMoveX, transform.position.y,
+        transform.position = new Vector3(transform.position.x + _distanceToMoveX, transform.position.y,
             transform.position.z);
-        lastPosition = player.transform.position;
+        _lastPosition = player.transform.position;
     }
 }

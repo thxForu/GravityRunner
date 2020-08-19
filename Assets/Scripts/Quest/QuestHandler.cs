@@ -15,11 +15,7 @@ public class QuestHandler : MonoBehaviour
     public void QuestCheck()
     {
         for (int i = 0; i < quest.Length; i++)
-        {
             if (quest[i].isActive && quest[i].goal.IsReached())
-            {
                 quest[i].Complete();
-            }
-        }
     }
 }

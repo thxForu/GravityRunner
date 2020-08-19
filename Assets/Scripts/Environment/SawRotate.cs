@@ -6,7 +6,6 @@ namespace Environment
     [ExecuteInEditMode]
     public class SawRotate : MonoBehaviour
     {
-        [FormerlySerializedAs("SpeedRotation")]
         public float speedRotation;
 
         private void FixedUpdate()

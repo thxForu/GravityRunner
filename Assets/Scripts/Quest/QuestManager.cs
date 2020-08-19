@@ -17,9 +17,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         for (int i = 0; i < quest.Length; i++)
-        {
             titleText[i].text = quest[i].title;
-        }
     }
 
     private void Update()

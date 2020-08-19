@@ -21,7 +21,7 @@ namespace Environment
         private void Start()
         {
             if (generationPotint == null) GameObject.Find("GenerationPoint");
-            _platformsWidth = new float[platformsM.Length];
+                _platformsWidth = new float[platformsM.Length];
 
             for (var i = 0; i < platformsM.Length; i++)
                 _platformsWidth[i] = platformsM[i].platform.GetComponent<BoxCollider2D>().size.x;
@@ -50,6 +50,7 @@ namespace Environment
                     _newPlatform = platformsM[_platformSelector].GetSaws();
                 else
                     _newPlatform = platformsM[_platformSelector].GetPlatform();
+                
                 _newPlatform.transform.position = transform.position;
                 _newPlatform.transform.rotation = transform.rotation;
                 _newPlatform.SetActive(true);
@@ -60,6 +61,7 @@ namespace Environment
                     _newPlatform = platformsM[_platformSelector].GetSaws();
                 else
                     _newPlatform = platformsM[_platformSelector].GetPlatform();
+                
                 _newPlatform.transform.position = transform.position;
                 _newPlatform.transform.rotation = transform.rotation;
                 _newPlatform.SetActive(true);

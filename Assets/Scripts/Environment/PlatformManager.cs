@@ -9,8 +9,7 @@ namespace Environment
         private List<GameObject> _platforms; //List of platforms
         private List<GameObject> _saws; //List of saws
         public GameObject platform;
-
-        [FormerlySerializedAs("platformAmout")] public int platformAmount;
+        public int platformAmount;
         public GameObject saw;
 
         private void Start()

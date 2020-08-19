@@ -25,9 +25,7 @@ public class GravityController : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-        {
             StartCoroutine(ChangeGravity(0));
-        }
     }
 #endif
 
@@ -55,7 +53,7 @@ public class GravityController : MonoBehaviour
             else
                 _rb.AddForce(transform.up *   microThrust, ForceMode2D.Impulse);
         }    
-            _rb.gravityScale *= -1;
+        _rb.gravityScale *= -1;
 
         yield return new WaitForSeconds(d);
         Rotate();
@@ -67,14 +65,6 @@ public class GravityController : MonoBehaviour
     }
     private void Rotate()
     {
-        
-        if (_top == false)
-        {
-            animRotation.SetBool("Rotate",true);
-        }
-        else
-        {
-            animRotation.SetBool("Rotate",false);
-        }
+        animRotation.SetBool("Rotate", _top == false);
     }
 }
