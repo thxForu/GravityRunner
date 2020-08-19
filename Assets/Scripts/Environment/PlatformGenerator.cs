@@ -8,7 +8,7 @@ namespace Environment
         public PlatformManager[] platformsM;
 
         private GameObject _newPlatform;
-        private float _newPlatformPositon;
+        private float _newPlatformPosition;
 
         private int _platformSelector;
         private float[] _platformsWidth;
@@ -34,8 +34,8 @@ namespace Environment
                  distBetween = Random.Range(distanceMin, distanceMax);
 
                 _platformSelector = Random.Range(0, platformsM.Length);
-                _newPlatformPositon = _platformsWidth[_platformSelector] / 2 + distBetween;
-                transform.position = new Vector2(transform.position.x + _newPlatformPositon, transform.position.y);
+                _newPlatformPosition = _platformsWidth[_platformSelector] / 2 + distBetween;
+                transform.position = new Vector2(transform.position.x + _newPlatformPosition, transform.position.y);
                 SpawnPlatform();
             }
         }

@@ -1309,7 +1309,7 @@ MonoBehaviour:
   platform: {fileID: 5382992707115570662, guid: 97156be5960b4934b920bd4196fe1d80,
     type: 3}
   platformAmount: 2
-  saw: {fileID: 1698811992441509625, guid: 3a37e95353d8ff44da5c012bd8d41ea4, type: 3}
+  saw: {fileID: 5745835965143785473, guid: 3a37e95353d8ff44da5c012bd8d41ea4, type: 3}
 --- !u!1 &338815846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,9 +4080,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest:
   - isActive: 0
-    title: "\u041F\u0440\u043E\u0431\u0435\u0436\u0430\u0442\u044C \u043C\u0435\u0442\u0440\u044B"
+    title: "\u041F\u0435\u0440\u0435\u043F\u0440\u044B\u0433\u043D\u0443\u0442\u044C
+      2 \u043F\u0438\u043B\u044B"
     goal:
-      GoalType: 2
+      GoalType: 4
       RequiredAmount: 0
   - isActive: 0
     title: "\u0441\u043E\u0431\u0440\u0430\u0442\u044C \u043C\u043E\u043D\u0435\u0442\u043A\u0438"
@@ -6944,7 +6945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1228562539674684747
 RectTransform:
   m_ObjectHideFlags: 0
