@@ -14,6 +14,7 @@ public class GameEvents : MonoBehaviour
 
     public event Action OnMoneyChange;
     public event Action OnDodgeComet;
+    public event Action OnDodgeSaw;
     
     public void MoneyChange()
     {
@@ -23,6 +24,10 @@ public class GameEvents : MonoBehaviour
     public void DodgeComet()
     {
         OnDodgeComet?.Invoke();
+    }
+    public void DodgeSaw()
+    {
+        OnDodgeSaw?.Invoke();
     }
     
 
