@@ -17,7 +17,6 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        print(col.name);
         if (col.tag.Equals("Player"))
         {
             MoneyManager.AddCoins(1);

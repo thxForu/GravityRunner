@@ -5,19 +5,32 @@ using UnityEngine;
 [System.Serializable]
 public class QuestGoal 
 {
-    private int _currentDistance = DistanceCounter.DistanceCount;
     
     public GoalType GoalType;
     public int RequiredAmount;
 
+    
     public bool IsReached()
     {
-        return MoneyManager.Coins >= 20;
+        switch (GoalType)
+        {
+            case GoalType.CollectCoins:
+                return CollectCoins(3);
+            
+            case GoalType.RunMeters:
+                Debug.Log("adasds");
+                return RunMeters(50);
+            case GoalType.NewRecord:
+                return NewRecord();
+            default:
+                Debug.Log("no Tasks ");
+                return false;
+        }
     }
 
     public bool NewRecord()
     {
-        return _currentDistance > PlayerPrefs.GetInt("HighScore");
+        return DistanceCounter.DistanceCount > PlayerPrefs.GetInt("HighScore");
     }
 
     public bool CollectCoins(int collectCoinsForTask)
@@ -27,7 +40,8 @@ public class QuestGoal
 
     public bool RunMeters(int runMetersForTask)
     {
-        return _currentDistance > runMetersForTask;
+        Debug.Log(DistanceCounter.DistanceCount);
+        return DistanceCounter.DistanceCount >= runMetersForTask;
     }
 }
 public enum GoalType

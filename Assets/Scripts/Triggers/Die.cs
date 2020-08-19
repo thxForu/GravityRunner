@@ -31,6 +31,7 @@ public class Die : MonoBehaviour
             PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + _deathCoins);
             if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
             _camera.orthographicSize = 3.6f;
+            
             _died = true;
             
             Time.timeScale = 0;

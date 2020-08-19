@@ -5,13 +5,21 @@ using UnityEngine;
 
 public class QuestHandler : MonoBehaviour
 {
-    public Quest quest;
+    public Quest[] quest = new Quest[3] ;
 
-    private void Update()
+    private void Start()
     {
-        if (quest.isActive&&quest.goal.IsReached())
+        Debug.Log(quest.Length);
+    }
+
+    public void QuestCheck()
+    {
+        for (int i = 0; i < quest.Length; i++)
         {
-            quest.Complete();
+            if (quest[i].isActive && quest[i].goal.IsReached())
+            {
+                quest[i].Complete();
+            }
         }
     }
 }
