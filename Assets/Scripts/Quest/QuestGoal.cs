@@ -22,8 +22,11 @@ public class QuestGoal
                 return RunMeters(50);
             case GoalType.NewRecord:
                 return NewRecord();
+            
+            case GoalType.DodgeComet:
+                return DodgeComets(2);
             default:
-                Debug.Log("no Tasks ");
+                Debug.LogError("no Tasks ");
                 return false;
         }
     }
@@ -42,6 +45,11 @@ public class QuestGoal
     {
         Debug.Log(DistanceCounter.DistanceCount);
         return DistanceCounter.DistanceCount >= runMetersForTask;
+    }
+
+    public bool DodgeComets(int cometsForDodge)
+    {
+        return DodgeComet.cometDodge >= cometsForDodge;
     }
 }
 public enum GoalType
