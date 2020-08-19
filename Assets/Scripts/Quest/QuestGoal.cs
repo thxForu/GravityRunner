@@ -25,6 +25,9 @@ public class QuestGoal
             
             case GoalType.DodgeComet:
                 return DodgeComets(2);
+            
+            case GoalType.FlyOverSaw:
+                return DodgeSaws(2);
             default:
                 Debug.LogError("no Tasks ");
                 return false;
@@ -50,6 +53,10 @@ public class QuestGoal
     public bool DodgeComets(int cometsForDodge)
     {
         return DodgeComet.cometDodge >= cometsForDodge;
+    }
+    public bool DodgeSaws(int sawsForDodge)
+    {
+        return DodgeSaw.sawDodge >= sawsForDodge;
     }
 }
 public enum GoalType
