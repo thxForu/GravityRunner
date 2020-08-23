@@ -1,36 +1,65 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Random = UnityEngine.Random;
 
 [System.Serializable]
-public class QuestGoal 
+public class QuestGoal
 {
-    
-    public GoalType GoalType;
-    public int RequiredAmount;
-
+    public GoalType goalType;
+    public int requiredAmount;
+    public int playerLevel;
+    public int count;
+    public GoalType RandomGoal()
+    {
+        var random = (GoalType) Random.Range(0,5);
+        return random;
+    }
     
     public bool IsReached()
     {
-        switch (GoalType)
+        RandomGoal();
+        switch (goalType)
         {
             case GoalType.CollectCoins:
-                return CollectCoins(3);
+                return CollectCoins(requiredAmount*playerLevel);
             
             case GoalType.RunMeters:
-                Debug.Log("adasds");
-                return RunMeters(50);
+                return RunMeters(requiredAmount*playerLevel);
+            
             case GoalType.NewRecord:
                 return NewRecord();
             
             case GoalType.DodgeComet:
-                return DodgeComets(2);
+                return DodgeComets(requiredAmount*playerLevel);
             
             case GoalType.FlyOverSaw:
-                return DodgeSaws(2);
+                return DodgeSaws(requiredAmount*playerLevel);
+            
             default:
                 Debug.LogError("no Tasks ");
                 return false;
+        }
+    }
+    public string TextForQuest()
+    {
+        switch (goalType)
+        {
+            case GoalType.CollectCoins:
+                return $"Collect {count} coins";
+            
+            case GoalType.RunMeters:
+                return $"Run {count} meters";
+            
+            case GoalType.NewRecord:
+                return "Set new record";
+            
+            case GoalType.DodgeComet:
+                return $"Dodge {count} comets";
+            
+            case GoalType.FlyOverSaw:
+                return $"Fly over {count} saws";
+            default:
+                Debug.LogError("no Tasks ");
+                return "no task";
         }
     }
 
@@ -46,7 +75,6 @@ public class QuestGoal
 
     public bool RunMeters(int runMetersForTask)
     {
-        Debug.Log(DistanceCounter.DistanceCount);
         return DistanceCounter.DistanceCount >= runMetersForTask;
     }
 
@@ -66,6 +94,5 @@ public enum GoalType
     RunMeters,
     DodgeComet,
     FlyOverSaw,
-    JumpOverFaults
 }
 

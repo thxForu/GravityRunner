@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEngine.Events;
-#if UNITY_EDITOR
 
 public class TestManager : MonoBehaviour
 {

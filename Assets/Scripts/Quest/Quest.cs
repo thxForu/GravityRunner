@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
-
 
 [System.Serializable]
 public class Quest
 { 
     public bool isActive;
+    public bool isDone;
     public string title;
 
     public QuestGoal goal;
@@ -13,6 +12,7 @@ public class Quest
     public void Complete()
     {
         isActive = false;
+        isDone = true;
         Debug.Log(title+" was completed");
     }
 }

@@ -1,21 +1,25 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class QuestHandler : MonoBehaviour
-{
-    public Quest[] quest = new Quest[3] ;
+public class QuestHandler : MonoBehaviour{
+    
+    [HideInInspector]public Quest[] quest = new Quest[3];
+    
+    public Image[] taskImages;
+    public Image completeTaskImage;
 
-    private void Start()
-    {
-        Debug.Log(quest.Length);
-    }
-
+    
+    
     public void QuestCheck()
     {
-        foreach (var t in quest)
-            if (t.isActive && t.goal.IsReached())
-                t.Complete();
+        for (var i = 0; i < quest.Length; i++)
+        {
+            if (quest[i].isActive && quest[i].goal.IsReached())
+            {
+                quest[i].Complete();
+                taskImages[i].sprite = completeTaskImage.sprite;
+            }   
+        }
     }
 }

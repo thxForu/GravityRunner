@@ -1,25 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
+
 
 public class QuestManager : MonoBehaviour
 {
-
     public Quest[] quest ;
-    public QuestHandler questHandler ;
+    public QuestHandler questHandler;
+    public QuestGoal QuestGoal;
     public GameObject questWindow;
+    public TextMeshProUGUI[] titleText;
     
-    public Text[] titleText;
-
+    
     private void Start()
     {
+        RandomQuest();
+        AcceptQuest();
         for (int i = 0; i < quest.Length; i++)
-            titleText[i].text = quest[i].title;
+            titleText[i].text = quest[i].goal.TextForQuest();
     }
 
+    public void RandomQuest()
+    {
+        for (int i = 0; i < quest.Length; i++)
+        {
+            Debug.Log(quest[i].goal.goalType);
+            quest[i].goal.goalType = QuestGoal.RandomGoal();
+            
+            Debug.Log(quest[i].goal.goalType);
+        }
+    }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q))
@@ -39,8 +49,12 @@ public class QuestManager : MonoBehaviour
     {
         for (var i = 0; i < quest.Length; i++)
         {
-            quest[i].isActive = true;
+            if (!quest[i].isDone)
+                quest[i].isActive = true;
+            
             questHandler.quest[i] = quest[i];
         }
     }
+
+    
 }

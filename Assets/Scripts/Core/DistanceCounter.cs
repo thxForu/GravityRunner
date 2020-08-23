@@ -9,12 +9,10 @@ public class DistanceCounter : MonoBehaviour
     private void Start()
     {
         DistanceCount = 0;
-        StartCoroutine(Counter());
     }
 
-    private IEnumerator Counter()
+    private void Update()
     {
         DistanceCount = (int)transform.position.x;
-        yield return new WaitForSeconds(0.2f);
     }
 }

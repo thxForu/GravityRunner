@@ -7,8 +7,8 @@ public class Die : MonoBehaviour
 {
     public GameObject diePanel;
     public Text hightScoreText, scoreText, dieCoinsText, totalCoinsText;
-    
-    
+
+    private QuestHandler _questHandler;
     private MoneyManager _moneyManager;
     private Camera _camera;
     private bool _died;
@@ -17,6 +17,7 @@ public class Die : MonoBehaviour
     private void Start()
     {
         _moneyManager = GetComponent<MoneyManager>();
+        _questHandler = GetComponent<QuestHandler>();
         _camera = Camera.main;
     }
 
@@ -31,7 +32,8 @@ public class Die : MonoBehaviour
             PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + _deathCoins);
             if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
             _camera.orthographicSize = 3.6f;
-            
+
+            _questHandler.QuestCheck();
             _died = true;
             
             Time.timeScale = 0;

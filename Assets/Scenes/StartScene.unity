@@ -811,7 +811,7 @@ MonoBehaviour:
   platform: {fileID: 5382992707115570662, guid: 97156be5960b4934b920bd4196fe1d80,
     type: 3}
   platformAmount: 2
-  saw: {fileID: 1698811992441509625, guid: 3a37e95353d8ff44da5c012bd8d41ea4, type: 3}
+  saw: {fileID: 5745835965143785473, guid: 3a37e95353d8ff44da5c012bd8d41ea4, type: 3}
 --- !u!1 &405658627
 GameObject:
   m_ObjectHideFlags: 0

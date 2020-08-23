@@ -13,6 +13,6 @@ public class HighScoreManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        distanceCount.text = "Score: " + DistanceCounter.DistanceCount;
+        distanceCount.text = "Score: " +1+ DistanceCounter.DistanceCount;
     }
 }
