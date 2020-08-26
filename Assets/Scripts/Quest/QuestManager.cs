@@ -1,4 +1,5 @@
 ﻿
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -14,22 +15,51 @@ public class QuestManager : MonoBehaviour
     
     private void Start()
     {
-        RandomQuest();
+        if (PlayerPrefs.HasKey("Task 0"))
+        {
+            GetQuest();
+        }
+        else
+        {
+            SetRandomQuest();
+        }
+        
         AcceptQuest();
         for (int i = 0; i < quest.Length; i++)
             titleText[i].text = quest[i].goal.TextForQuest();
     }
 
-    public void RandomQuest()
+    public void GetQuest()
     {
         for (int i = 0; i < quest.Length; i++)
         {
-            Debug.Log(quest[i].goal.goalType);
-            quest[i].goal.goalType = QuestGoal.RandomGoal();
-            
-            Debug.Log(quest[i].goal.goalType);
+            quest[i].goal.goalType = QuestGoal.GetGoal(PlayerPrefs.GetInt($"Task {i}"));
+            quest[i].isDone = PlayerPrefs.GetInt($"Task done {i}") == 1;
+            quest[i].isActive = PlayerPrefs.GetInt($"Task active {i}") == 1;   
         }
     }
+
+    public void SaveQuest()
+    {
+        for (int i = 0; i < quest.Length; i++)
+        {
+            PlayerPrefs.SetInt($"Task {i}",(int)quest[i].goal.goalType);
+            PlayerPrefs.SetInt($"Task done {i}",quest[i].isDone?1:0);
+            PlayerPrefs.SetInt($"Task active {i}",quest[i].isDone?1:0);
+            PlayerPrefs.Save();
+        }
+    }
+    
+    public void SetRandomQuest()
+    {
+        foreach (var q in quest)
+        {
+            q.goal.goalType = QuestGoal.RandomGoal();
+            q.isActive = true;
+            q.isDone = false;
+        }
+    }
+    
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q))
@@ -45,16 +75,31 @@ public class QuestManager : MonoBehaviour
         questWindow.SetActive(true);
     }
 
+    public bool CheckAll()
+    {
+        var completeAll = 0;
+        foreach (var q in quest)
+            if (q.isDone)
+                completeAll++;
+
+        Debug.LogError(completeAll+"COMPLETE");
+        if (completeAll == 3)
+            return true;
+        
+        return false;
+    }
     public void AcceptQuest()
     {
         for (var i = 0; i < quest.Length; i++)
         {
-            if (!quest[i].isDone)
-                quest[i].isActive = true;
             
             questHandler.quest[i] = quest[i];
+            quest[i].isActive = quest[i].isDone == false;
         }
     }
 
-    
+    private void OnDestroy()
+    {
+        SaveQuest();
+    }
 }

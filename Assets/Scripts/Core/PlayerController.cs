@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        //Time.timeScale = 1;
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -24,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < DiePointBottom.transform.position.y ||
             transform.position.y > DiePointTop.transform.position.y)
-            //Debug.Log("Die");
             OnDieEvent.Invoke();
     }
 }

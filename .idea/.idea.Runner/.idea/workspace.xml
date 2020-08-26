@@ -21,15 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" afterDir="false" />
     </list>
@@ -67,6 +64,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/35/193ac1b9/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/64/95c27961/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,7 +75,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlurMobile.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/PlatformGenerator.cs" />
@@ -102,14 +99,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +170,10 @@
       <workItem from="1597935788009" duration="5671000" />
       <workItem from="1598019710309" duration="5675000" />
       <workItem from="1598106596645" duration="9436000" />
-      <workItem from="1598180389783" duration="347000" />
+      <workItem from="1598180389783" duration="5987000" />
+      <workItem from="1598202671622" duration="2606000" />
+      <workItem from="1598286823633" duration="4024000" />
+      <workItem from="1598361317354" duration="5235000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -250,10 +251,11 @@
     </state>
     <state x="2472" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597859719546" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596988719238" />
-    <state x="2439" y="118" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597875695829">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="519" y="118" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598373533855">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2439" y="118" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597875695829" />
+    <state x="519" y="118" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598373533855" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597077730398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

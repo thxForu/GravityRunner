@@ -10,13 +10,16 @@ public class QuestGoal
     public int count;
     public GoalType RandomGoal()
     {
-        var random = (GoalType) Random.Range(0,5);
-        return random;
+        return GetGoal(Random.Range(0,5));
+    }
+
+    public GoalType GetGoal(int numberGoal)
+    {
+        return (GoalType) numberGoal;
     }
     
     public bool IsReached()
     {
-        RandomGoal();
         switch (goalType)
         {
             case GoalType.CollectCoins:
@@ -34,39 +37,53 @@ public class QuestGoal
             case GoalType.FlyOverSaw:
                 return DodgeSaws(requiredAmount*playerLevel);
             
+            case GoalType.CollectUniqueCoins:
+                return true;
             default:
                 Debug.LogError("no Tasks ");
                 return false;
         }
     }
+    
     public string TextForQuest()
     {
         switch (goalType)
         {
             case GoalType.CollectCoins:
-                return $"Collect {count} coins";
+                return $"Collect {requiredAmount} coins";
             
             case GoalType.RunMeters:
-                return $"Run {count} meters";
+                return $"Run {requiredAmount} meters";
             
             case GoalType.NewRecord:
                 return "Set new record";
             
             case GoalType.DodgeComet:
-                return $"Dodge {count} comets";
+                return $"Dodge {requiredAmount} comets";
             
             case GoalType.FlyOverSaw:
-                return $"Fly over {count} saws";
+                return $"Fly over {requiredAmount} saws";
+            
+            case GoalType.CollectUniqueCoins:
+                return $"Collect {requiredAmount}unique coins";
+            
             default:
                 Debug.LogError("no Tasks ");
                 return "no task";
         }
     }
+    
 
     public bool NewRecord()
     {
-        return DistanceCounter.DistanceCount > PlayerPrefs.GetInt("HighScore");
+        if (PlayerPrefs.HasKey("HighScore"))
+            return DistanceCounter.DistanceCount > PlayerPrefs.GetInt("HighScore");
+        else
+            PlayerPrefs.SetInt("HighScore",DistanceCounter.DistanceCount);
+        
+        return false;
     }
+    
 
     public bool CollectCoins(int collectCoinsForTask)
     {
@@ -82,6 +99,7 @@ public class QuestGoal
     {
         return DodgeComet.cometDodge >= cometsForDodge;
     }
+    
     public bool DodgeSaws(int sawsForDodge)
     {
         return DodgeSaw.sawDodge >= sawsForDodge;
@@ -94,5 +112,6 @@ public enum GoalType
     RunMeters,
     DodgeComet,
     FlyOverSaw,
+    CollectUniqueCoins
 }
 

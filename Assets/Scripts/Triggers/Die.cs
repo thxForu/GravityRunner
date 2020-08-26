@@ -10,6 +10,7 @@ public class Die : MonoBehaviour
 
     private QuestHandler _questHandler;
     private MoneyManager _moneyManager;
+    private QuestManager _questManager;
     private Camera _camera;
     private bool _died;
     private int _deathPoint, _deathCoins;
@@ -18,7 +19,15 @@ public class Die : MonoBehaviour
     {
         _moneyManager = GetComponent<MoneyManager>();
         _questHandler = GetComponent<QuestHandler>();
+        _questManager = GetComponent<QuestManager>();
         _camera = Camera.main;
+        
+        if (_questManager.CheckAll())
+        {
+            print("setRandom");
+            _questManager.SetRandomQuest();
+        }
+        
     }
 
     public void PlayerDie()
@@ -30,14 +39,22 @@ public class Die : MonoBehaviour
             _deathCoins = _moneyManager.GetCoins(); //coins when player Die
 
             PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + _deathCoins);
-            if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
             _camera.orthographicSize = 3.6f;
 
             _questHandler.QuestCheck();
+            if (_questHandler.CheckAll())
+            {
+                print("setRandom");
+                _questManager.SetRandomQuest();
+            }
+
+            if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
+
             _died = true;
             
             Time.timeScale = 0;
             ShowDiePanel();
+
         }
     }
 
