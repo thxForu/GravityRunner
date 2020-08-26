@@ -21,14 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +63,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/64/95c27961/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/d0/d165687b/Camera.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -103,11 +99,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
       </list>
     </option>
   </component>
@@ -174,6 +170,7 @@
       <workItem from="1598202671622" duration="2606000" />
       <workItem from="1598286823633" duration="4024000" />
       <workItem from="1598361317354" duration="5235000" />
+      <workItem from="1598453204814" duration="3515000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -233,6 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597485563538" />
+    <state x="2647" y="244" key="RiderGenerateDialog" timestamp="1598455465395">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2647" y="244" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1598455465395" />
     <state x="815" y="241" key="RollbackChangesDialog" timestamp="1597077744240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

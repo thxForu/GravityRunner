@@ -1,17 +1,13 @@
-﻿
-using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-
 
 public class QuestManager : MonoBehaviour
 {
-    public Quest[] quest ;
+    [HideInInspector] public Quest[] quest ;
     public QuestHandler questHandler;
     public QuestGoal QuestGoal;
     public GameObject questWindow;
     public TextMeshProUGUI[] titleText;
-    
     
     private void Start()
     {
@@ -46,8 +42,10 @@ public class QuestManager : MonoBehaviour
             PlayerPrefs.SetInt($"Task {i}",(int)quest[i].goal.goalType);
             PlayerPrefs.SetInt($"Task done {i}",quest[i].isDone?1:0);
             PlayerPrefs.SetInt($"Task active {i}",quest[i].isDone?1:0);
-            PlayerPrefs.Save();
         }
+        
+        PlayerPrefs.SetInt("PlayerLevel", QuestGoal.PlayerLevel);
+        PlayerPrefs.Save();
     }
     
     public void SetRandomQuest()
@@ -57,7 +55,11 @@ public class QuestManager : MonoBehaviour
             q.goal.goalType = QuestGoal.RandomGoal();
             q.isActive = true;
             q.isDone = false;
+            
         }
+
+        QuestGoal.PlayerLevel = QuestGoal.PlayerLevel + 1;
+        Debug.Log(QuestGoal.PlayerLevel);
     }
     
     private void Update()
@@ -75,19 +77,6 @@ public class QuestManager : MonoBehaviour
         questWindow.SetActive(true);
     }
 
-    public bool CheckAll()
-    {
-        var completeAll = 0;
-        foreach (var q in quest)
-            if (q.isDone)
-                completeAll++;
-
-        Debug.LogError(completeAll+"COMPLETE");
-        if (completeAll == 3)
-            return true;
-        
-        return false;
-    }
     public void AcceptQuest()
     {
         for (var i = 0; i < quest.Length; i++)

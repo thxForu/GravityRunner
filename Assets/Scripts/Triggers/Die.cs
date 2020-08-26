@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using UnityEngine.Serialization;
 public class Die : MonoBehaviour
 {
     public GameObject diePanel;
@@ -22,7 +22,7 @@ public class Die : MonoBehaviour
         _questManager = GetComponent<QuestManager>();
         _camera = Camera.main;
         
-        if (_questManager.CheckAll())
+        if (_questHandler.CheckAll())
         {
             print("setRandom");
             _questManager.SetRandomQuest();
