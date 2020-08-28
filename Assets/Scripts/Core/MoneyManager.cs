@@ -1,14 +1,11 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Serialization;
 
 public class MoneyManager : MonoBehaviour
 {
     public static int Coins;
 
-    [SerializeField] private Text coinsCounter;
+    [SerializeField] private TMP_Text coinsCounter;
 
     public int GetCoins()
     {

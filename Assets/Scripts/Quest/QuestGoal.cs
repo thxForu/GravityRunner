@@ -11,7 +11,7 @@ public class QuestGoal
         dodgeCometRequiredAmount = 2,
         dodgeSawRequiredAmount = 3 ;
 
-    public int PlayerLevel
+    public static int PlayerLevel
     {
         get => PlayerPrefs.GetInt("PlayerLevel");
         set => PlayerPrefs.SetInt("PlayerLevel", value);

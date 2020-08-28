@@ -1,12 +1,10 @@
-﻿using System;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.Serialization;
 public class Die : MonoBehaviour
 {
-    public GameObject diePanel;
-    public Text hightScoreText, scoreText, dieCoinsText, totalCoinsText;
+    public GameObject diePanel, questPanel, dieStatsPanel;
+    public TMP_Text hightScoreText, scoreText, dieCoinsText, totalCoinsText;
 
     private QuestHandler _questHandler;
     private MoneyManager _moneyManager;
@@ -48,7 +46,8 @@ public class Die : MonoBehaviour
                 _questManager.SetRandomQuest();
             }
 
-            if (_deathPoint > PlayerPrefs.GetInt("HighScore")) PlayerPrefs.SetInt("HighScore", _deathPoint);
+            if (_deathPoint > PlayerPrefs.GetInt("HighScore"))
+                PlayerPrefs.SetInt("HighScore", _deathPoint);
 
             _died = true;
             
@@ -67,6 +66,12 @@ public class Die : MonoBehaviour
         totalCoinsText.text = "Total coins:"+PlayerPrefs.GetInt("Money").ToString();
     }
 
+    public void HideQuestPanel()
+    {
+        questPanel.SetActive(false);
+        dieStatsPanel.SetActive(true);
+        
+    }
     public void Reset()
     {
         SceneManager.LoadScene((SceneManager.GetActiveScene().name));

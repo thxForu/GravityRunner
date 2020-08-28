@@ -1,10 +1,10 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using TMPro;
+using UnityEngine;
 using static UnityEngine.PlayerPrefs;
 
 public class HighScoreManager : MonoBehaviour
 {
-    [SerializeField] private Text distanceCount, highScore;
+    [SerializeField] private TMP_Text distanceCount, highScore;
 
     private void Start()
     {

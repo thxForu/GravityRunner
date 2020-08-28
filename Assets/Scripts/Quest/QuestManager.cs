@@ -5,9 +5,10 @@ public class QuestManager : MonoBehaviour
 {
     [HideInInspector] public Quest[] quest ;
     public QuestHandler questHandler;
-    public QuestGoal QuestGoal;
+    public QuestGoal questGoal;
     public GameObject questWindow;
-    public TextMeshProUGUI[] titleText;
+    public TMP_Text[] titleText;
+    public TMP_Text playerLevelText;
     
     private void Start()
     {
@@ -19,17 +20,19 @@ public class QuestManager : MonoBehaviour
         {
             SetRandomQuest();
         }
-        
+
+        playerLevelText.text = "Level "+QuestGoal.PlayerLevel.ToString();
         AcceptQuest();
         for (int i = 0; i < quest.Length; i++)
             titleText[i].text = quest[i].goal.TextForQuest();
+        
     }
 
     public void GetQuest()
     {
         for (int i = 0; i < quest.Length; i++)
         {
-            quest[i].goal.goalType = QuestGoal.GetGoal(PlayerPrefs.GetInt($"Task {i}"));
+            quest[i].goal.goalType = questGoal.GetGoal(PlayerPrefs.GetInt($"Task {i}"));
             quest[i].isDone = PlayerPrefs.GetInt($"Task done {i}") == 1;
             quest[i].isActive = PlayerPrefs.GetInt($"Task active {i}") == 1;   
         }
@@ -52,13 +55,14 @@ public class QuestManager : MonoBehaviour
     {
         foreach (var q in quest)
         {
-            q.goal.goalType = QuestGoal.RandomGoal();
+            q.goal.goalType = questGoal.RandomGoal();
             q.isActive = true;
             q.isDone = false;
             
         }
 
-        QuestGoal.PlayerLevel = QuestGoal.PlayerLevel + 1;
+        QuestGoal.PlayerLevel += 1;
+        playerLevelText.text = "Level "+QuestGoal.PlayerLevel.ToString();
         Debug.Log(QuestGoal.PlayerLevel);
     }
     
