@@ -4,11 +4,14 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     [HideInInspector] public Quest[] quest ;
+        
     public QuestHandler questHandler;
     public QuestGoal questGoal;
     public GameObject questWindow;
     public TMP_Text[] titleText;
+    public TMP_Text[] pauseTitleText;
     public TMP_Text playerLevelText;
+    public TMP_Text pausePlayerLevelText;
     
     private void Start()
     {
@@ -22,10 +25,14 @@ public class QuestManager : MonoBehaviour
         }
 
         playerLevelText.text = "Level "+QuestGoal.PlayerLevel.ToString();
+        pausePlayerLevelText.text = "Level "+QuestGoal.PlayerLevel.ToString();
         AcceptQuest();
         for (int i = 0; i < quest.Length; i++)
+        {
             titleText[i].text = quest[i].goal.TextForQuest();
-        
+            pauseTitleText[i].text = quest[i].goal.TextForQuest();
+        }
+
     }
 
     public void GetQuest()

@@ -10,6 +10,7 @@ public class Director : MonoBehaviour
     public int chanceSaw;
 
     public int increaseDifficulty = -100;
+    public int DefaultDifficulty = -100;
     public UnityEvent spawnCoinsEvent;
 
     public UnityEvent spawnRocketEvent;
@@ -18,12 +19,13 @@ public class Director : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnRockets());
+        StartCoroutine(SpawnComets());
         StartCoroutine(SpawnCoins());
     }
 
-    private IEnumerator SpawnRockets()
+    private IEnumerator SpawnComets()
     {
+        yield return new WaitForSeconds(15);
         while (true)
         {
             if (_canSpawnRockets)
@@ -42,9 +44,13 @@ public class Director : MonoBehaviour
         }
     }
 
+    private int GetDifficulty()
+    {
+        return DistanceCounter.DistanceCount / 15;
+    }
     public int GetChanceSaw(int minChanceSaw = -100, int maxChanceSaw = 100, int changeChanceSaw = 0)
     {
-        increaseDifficulty = Random.Range(0, DistanceCounter.DistanceCount / 100);
+        increaseDifficulty = DefaultDifficulty + Random.Range(0, GetDifficulty());
         chanceSaw = Random.Range(minChanceSaw + changeChanceSaw + increaseDifficulty,
             maxChanceSaw + increaseDifficulty);
         return chanceSaw;

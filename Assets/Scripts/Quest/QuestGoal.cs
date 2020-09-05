@@ -32,8 +32,6 @@ public class QuestGoal
     
     public bool IsReached()
     {
-        Debug.Log(PlayerLevel);
-        Debug.Log(coinsRequiredAmount);
 
         switch (goalType)
         {

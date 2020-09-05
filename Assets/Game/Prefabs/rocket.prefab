@@ -145,8 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3764742efc0d694996a2ad90980c888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 1
-  diePane: {fileID: 4282096765920768216, guid: 564c4b9bd148bb64bb9083ecfda63a2f, type: 3}
+  thrust: 0.8
 --- !u!1 &8581662754732318456
 GameObject:
   m_ObjectHideFlags: 0

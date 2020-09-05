@@ -4,28 +4,29 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject PauseMenuPanel;
-    public GameObject HomeCanvas;
-    public GameObject GameCanvas;
+    public GameObject pauseMenuPanel, homeCanvas, gameCanvas, continueButton, restartButton;
     
     public void PauseGame()
     {
         Time.timeScale = 0;
-        PauseMenuPanel.SetActive(true);
+        pauseMenuPanel.SetActive(true);
     }
 
     public void ContinueGame()
     {
         Time.timeScale = 1;
-        GameCanvas.SetActive(true);
-        PauseMenuPanel.SetActive(false);
-        HomeCanvas.SetActive(false);
+        gameCanvas.SetActive(true);
+        pauseMenuPanel.SetActive(false);
+        homeCanvas.SetActive(false);
     }
 
     public void HomeButton()
     {
-        HomeCanvas.SetActive(true);
-        PauseMenuPanel.SetActive(false);
-        GameCanvas.SetActive(false);
+        homeCanvas.SetActive(true);
+        pauseMenuPanel.SetActive(false);
+        continueButton.SetActive(true);
+        restartButton.SetActive(false);
+        gameCanvas.SetActive(false);
+        
     }
 }

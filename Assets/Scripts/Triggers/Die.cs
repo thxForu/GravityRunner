@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Die : MonoBehaviour
 {
-    public GameObject diePanel, questPanel, dieStatsPanel;
+    public GameObject diePanel, questPanel, dieStatsPanel, homeCanvas, restartButton, continueButton;
     public TMP_Text hightScoreText, scoreText, dieCoinsText, totalCoinsText;
 
     private QuestHandler _questHandler;
@@ -66,13 +66,20 @@ public class Die : MonoBehaviour
         totalCoinsText.text = "Total coins:"+PlayerPrefs.GetInt("Money").ToString();
     }
 
+    public void ShowHomeCanvas()
+    {
+        homeCanvas.SetActive(true);
+        restartButton.SetActive(true);
+        continueButton.SetActive(false);
+        diePanel.SetActive(false);
+    }
     public void HideQuestPanel()
     {
         questPanel.SetActive(false);
         dieStatsPanel.SetActive(true);
-        
     }
-    public void Reset()
+    
+    public void Restart()
     {
         SceneManager.LoadScene((SceneManager.GetActiveScene().name));
         Time.timeScale = 1;

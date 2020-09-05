@@ -33,7 +33,7 @@ public class GravityController : MonoBehaviour
     {
         StartCoroutine(ChangeGravity(timeStart/secondsDivideBy));
     }
-    public IEnumerator ChangeGravity(float d)
+    public IEnumerator ChangeGravity(float timeForChangeRotate)
     {
         _thrusted = false;
         if (timeStart >= 0.2)
@@ -51,11 +51,11 @@ public class GravityController : MonoBehaviour
             if (_top)
                 _rb.AddForce(transform.up * (-1 * microThrust), ForceMode2D.Impulse);
             else
-                _rb.AddForce(transform.up *   microThrust, ForceMode2D.Impulse);
+                _rb.AddForce(transform.up * microThrust, ForceMode2D.Impulse);
         }    
         _rb.gravityScale *= -1;
 
-        yield return new WaitForSeconds(d);
+        yield return new WaitForSeconds(timeForChangeRotate);
         Rotate();
 
         _top = !_top;
