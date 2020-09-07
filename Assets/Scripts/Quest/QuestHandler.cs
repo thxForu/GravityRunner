@@ -8,7 +8,9 @@ public class QuestHandler : MonoBehaviour
     
     public Image[] taskImages;
     public Image[] pauseTaskImages;
+    public Image[] starsImages;
     public Image completeTaskImage;
+    public Image completeStartImage;
 
 
     private void Start()
@@ -27,10 +29,10 @@ public class QuestHandler : MonoBehaviour
             }
             if (quest[i].isDone)
             {
+                starsImages[i].sprite = completeStartImage.sprite;
                 taskImages[i].sprite = completeTaskImage.sprite;
                 pauseTaskImages[i].sprite = completeTaskImage.sprite;
             }
-
         }
     }
 

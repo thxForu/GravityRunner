@@ -35,11 +35,11 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
 
     public void Select()
     {
-        if (OnTabSelected != null) OnTabSelected.Invoke();
+        OnTabSelected?.Invoke();
     }
 
     public void Deselect()
     {
-        if (OnTabDeselected != null) OnTabDeselected.Invoke();
+        OnTabDeselected?.Invoke();
     }
 }

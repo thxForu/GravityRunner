@@ -19,26 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/rocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/rocket.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,12 +103,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TestGravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
       </list>
     </option>
   </component>
@@ -195,7 +181,8 @@
       <workItem from="1598863315231" duration="8745000" />
       <workItem from="1599227149720" duration="29000" />
       <workItem from="1599236819665" duration="1664000" />
-      <workItem from="1599318954402" duration="3634000" />
+      <workItem from="1599318954402" duration="3888000" />
+      <workItem from="1599392312156" duration="8479000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
