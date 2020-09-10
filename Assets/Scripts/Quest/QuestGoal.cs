@@ -17,7 +17,6 @@ public class QuestGoal
         set => PlayerPrefs.SetInt("PlayerLevel", value);
     }
 
-
     //return random quest from enum
     public GoalType RandomGoal()
     {
@@ -32,10 +31,8 @@ public class QuestGoal
     
     public bool IsReached()
     {
-
         switch (goalType)
         {
-            
             case GoalType.CollectCoins:
                 return CollectCoins(coinsRequiredAmount*PlayerLevel);
             

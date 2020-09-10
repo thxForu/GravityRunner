@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
@@ -12,7 +13,7 @@ public class QuestManager : MonoBehaviour
     public TMP_Text[] pauseTitleText;
     public TMP_Text playerLevelText;
     public TMP_Text pausePlayerLevelText;
-    
+    private List<GoalType> _goalTypes;
     private void Start()
     {
         if (PlayerPrefs.HasKey("Task 0"))
@@ -53,36 +54,33 @@ public class QuestManager : MonoBehaviour
             PlayerPrefs.SetInt($"Task done {i}", quest[i].isDone ? 1 : 0);
             PlayerPrefs.SetInt($"Task active {i}", quest[i].isDone ? 1 : 0);
         }
-        
         PlayerPrefs.SetInt("PlayerLevel", QuestGoal.PlayerLevel);
         PlayerPrefs.Save();
     }
     
     public void SetRandomQuest()
     {
-        foreach (var q in quest)
+        _goalTypes = new List<GoalType>();
+        _goalTypes.Add(questGoal.RandomGoal());
+        for (int i = 0; i < quest.Length; i++)
         {
-            q.goal.goalType = questGoal.RandomGoal();
-            q.isActive = true;
-            q.isDone = false;
+            var randGoal = questGoal.RandomGoal();
+            while (_goalTypes.Contains(randGoal))
+                randGoal = questGoal.RandomGoal();
+
+            _goalTypes.Add(randGoal);
         }
-        
-        for (int i = 1; i < quest.Length; i++)
+        for (int i = 0; i < quest.Length; i++)
         {
-            var currentGoal = quest[i].goal.goalType;
-            var beforeGoal = quest[i - 1].goal.goalType;
-            while (currentGoal == beforeGoal)
-            {
-                currentGoal = questGoal.RandomGoal();
-            }
-            quest[i].goal.goalType = currentGoal;
+            quest[i].goal.goalType = _goalTypes.ToArray()[i];
+            quest[i].isActive = true;
+            quest[i].isDone = false;
         }
-        
+
         QuestGoal.PlayerLevel += 1;
         playerLevelText.text = "Level "+QuestGoal.PlayerLevel.ToString();
         Debug.Log(QuestGoal.PlayerLevel);
     }
-
 
     private void AcceptQuest()
     {
