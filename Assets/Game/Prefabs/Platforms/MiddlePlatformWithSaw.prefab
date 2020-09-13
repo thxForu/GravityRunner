@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7917941771960662220}
   - component: {fileID: 7842406186131813826}
-  - component: {fileID: 4419981646257136469}
+  - component: {fileID: 5286552036990317600}
   m_Layer: 0
   m_Name: DodgeCollider
   m_TagString: Untagged
@@ -313,7 +313,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.635209, y: 2.1293764}
   m_EdgeRadius: 0
---- !u!114 &4419981646257136469
+--- !u!114 &5286552036990317600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7725162205676286209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378c2f6879d11a1458cd6d322749c630, type: 3}
+  m_Script: {fileID: 11500000, guid: a0b36aea93649c24fbb01ed1a62bcc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7223799463304001462
