@@ -22,17 +22,13 @@ namespace UI
 
         IEnumerator LoadAsyncScene()
         {
-            
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(gameScene);
-
+            var asyncLoad = SceneManager.LoadSceneAsync(gameScene);
             // Wait until the asynchronous scene fully loads
             while (!asyncLoad.isDone)
             {
                 yield return null;
-                
             }
         }
-
         private IEnumerator MovePlayer()
         {
             while (true)
