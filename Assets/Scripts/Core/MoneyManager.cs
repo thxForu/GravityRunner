@@ -33,6 +33,7 @@ public class MoneyManager : MonoBehaviour
     {
         coinsCounter.text = GetCoins().ToString();
     }
+    
 
     private void OnDestroy()
     {

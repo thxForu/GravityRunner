@@ -54,7 +54,7 @@ public class QuestManager : MonoBehaviour
             PlayerPrefs.SetInt($"Task done {i}", quest[i].isDone ? 1 : 0);
             PlayerPrefs.SetInt($"Task active {i}", quest[i].isDone ? 1 : 0);
         }
-        PlayerPrefs.SetInt("PlayerLevel", QuestGoal.PlayerLevel);
+        PlayerPrefs.SetInt(Constans.PLAYER_LEVEL, QuestGoal.PlayerLevel);
         PlayerPrefs.Save();
     }
     

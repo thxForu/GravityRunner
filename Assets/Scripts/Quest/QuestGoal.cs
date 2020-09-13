@@ -13,8 +13,8 @@ public class QuestGoal
 
     public static int PlayerLevel
     {
-        get => PlayerPrefs.GetInt("PlayerLevel");
-        set => PlayerPrefs.SetInt("PlayerLevel", value);
+        get => PlayerPrefs.GetInt(Constans.PLAYER_LEVEL);
+        set => PlayerPrefs.SetInt(Constans.PLAYER_LEVEL, value);
     }
 
     //return random quest from enum
@@ -88,10 +88,10 @@ public class QuestGoal
 
     public bool NewRecord()
     {
-        if (PlayerPrefs.HasKey("HighScore"))
-            return DistanceCounter.DistanceCount > PlayerPrefs.GetInt("HighScore");
+        if (PlayerPrefs.HasKey(Constans.PLAYER_HIGH_SCORE))
+            return DistanceCounter.DistanceCount > PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE);
         else
-            PlayerPrefs.SetInt("HighScore",DistanceCounter.DistanceCount);
+            PlayerPrefs.SetInt(Constans.PLAYER_HIGH_SCORE,DistanceCounter.DistanceCount);
         
         return false;
     }
@@ -109,12 +109,12 @@ public class QuestGoal
 
     public bool DodgeComets(int cometsForDodge)
     {
-        return DodgeComet.cometDodge >= cometsForDodge;
+        return DodgeComet.CountDodge >= cometsForDodge;
     }
     
     public bool DodgeSaws(int sawsForDodge)
     {
-        return DodgeSaw.sawDodge >= sawsForDodge;
+        return DodgeSaw.CountDodge >= sawsForDodge;
     }
 }
 public enum GoalType
