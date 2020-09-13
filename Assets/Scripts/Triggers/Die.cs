@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class Die : MonoBehaviour
 {
     public GameObject diePanel, questPanel, dieStatsPanel, homeCanvas, restartButton, continueButton;
-    public TMP_Text scoreText, dieCoinsText, totalCoinsText;
+    public TMP_Text highScoreText, scoreText, dieCoinsText, totalCoinsText;
 
     private QuestHandler _questHandler;
     private MoneyManager _moneyManager;
@@ -64,10 +64,10 @@ public class Die : MonoBehaviour
         PlayerPrefs.SetInt(Constans.DODGE_COMETS,PlayerPrefs.GetInt(Constans.DODGE_COMETS)+_dodgeComet);
     }
     
-
-    public void ShowDiePanel()
+    private void ShowDiePanel()
     {
         diePanel.SetActive(true);
+        highScoreText.text = "High score: " + PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE);
         scoreText.text = "Score: "+(_deathPoint).ToString();
         dieCoinsText.text = "Collected: "+_deathCrystals.ToString();
         totalCoinsText.text = "Total crystals: "+PlayerPrefs.GetInt(Constans.CURRENT_MONEY).ToString();
