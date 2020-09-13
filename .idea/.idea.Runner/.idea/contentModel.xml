@@ -107,6 +107,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Constans.cs" t="Include" />
           <e p="Core" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="Director.cs" t="Include" />
@@ -147,10 +148,10 @@
             <e p="Saw.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="HighScoreManager.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
             <e p="ScalerController.cs" t="Include" />
             <e p="StartGame.cs" t="Include" />
+            <e p="StatsHandler.cs" t="Include" />
             <e p="TabButton.cs" t="Include" />
             <e p="TabGroup.cs" t="Include" />
           </e>
