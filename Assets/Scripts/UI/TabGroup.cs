@@ -41,12 +41,7 @@ public class TabGroup : MonoBehaviour
         ResetTabs();
         //button.Background.sprite = TabActive;
         var index = button.transform.GetSiblingIndex();
-        Debug.Log("VAR");
-        for (var i = 0; i < objectsToSawp.Count; i++)
-            if (i == index)
-                objectsToSawp[i].SetActive(true);
-            else
-                objectsToSawp[i].SetActive(false);
+        for (var i = 0; i < objectsToSawp.Count; i++) objectsToSawp[i].SetActive(i == index);
     }
 
     public void ResetTabs()

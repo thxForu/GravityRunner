@@ -1,28 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DodgeSaw : MonoBehaviour
 {
-    public static int sawDodge;
-    void Start()
-    {
-        GameEvents.current.OnMoneyChange += DodgeSawCounter;
-    }
+    public static int CountDodge;
+    private bool canTriggered;
 
+    private void OnEnable()
+    {
+        canTriggered = true;
+    }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
-            GameEvents.current.DodgeSaw();
+        if (col.CompareTag("Player")&& canTriggered)
+        {
+            DodgeSawCounter();
+            Debug.Log("SAW COUNTER");
+            canTriggered = false;
+        }
     }
 
-    void DodgeSawCounter()
+    public static int  DodgeSawCounter()
     {
-        sawDodge += 1;
+        return CountDodge += 1;
     }
-
-    private void OnDestroy()
+    
+    private void OnDisable()
     {
-        GameEvents.current.OnMoneyChange -= DodgeSawCounter;
+        canTriggered = true;
     }
 }

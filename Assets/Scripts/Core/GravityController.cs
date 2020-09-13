@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 public class GravityController : MonoBehaviour
 {
-    public static float timeStart = 0;
+    public static float timeStart;
     [SerializeField] private Animator animRotation;
 
     [SerializeField] private float secondsDivideBy = 7;

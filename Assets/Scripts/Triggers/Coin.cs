@@ -1,11 +1,8 @@
-﻿using System;
-using UnityEngine;
-
+﻿using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
     //TODO add listener or some shit\\\ this not normal with static;
-
 
     private void OnEnable()
     {
@@ -28,5 +25,4 @@ public class Coin : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
 }

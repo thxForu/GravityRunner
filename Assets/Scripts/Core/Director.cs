@@ -11,8 +11,8 @@ public class Director : MonoBehaviour
 
     public int increaseDifficulty = -100;
     public int DefaultDifficulty = -100;
+    
     public UnityEvent spawnCoinsEvent;
-
     public UnityEvent spawnRocketEvent;
 
     public int timeForSpawn = 35; //average time when something must happening 35 seconds

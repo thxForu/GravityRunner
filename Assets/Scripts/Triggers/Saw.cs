@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class Saw : MonoBehaviour
 {
-    private GameObject diePanel;
-    private Die dieScript;
+    private GameObject _diePanel;
+    private Die _dieScript;
     private void Start()
     {
-        diePanel = GameObject.Find("GameController");
-        dieScript = diePanel.GetComponent<Die>();
+        _diePanel = GameObject.Find("GameController");
+        _dieScript = _diePanel.GetComponent<Die>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag.Equals("Player"))
         {
-            dieScript.PlayerDie();
+            _dieScript.PlayerDie();
         }
     }
 }

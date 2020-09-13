@@ -1,29 +1,32 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DodgeComet : MonoBehaviour
 {
-    public static int cometDodge;
-    void Start()
+    public static int CountDodge;
+    private bool canTriggered;
+
+    private void OnEnable()
     {
-        GameEvents.current.OnMoneyChange += DodgeCometCounter;
+        canTriggered = true;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
-            GameEvents.current.DodgeComet();
+        if (col.CompareTag("Player") && canTriggered)
+        {
+            DodgeCometCounter();
+            Debug.Log("Comet COUNTER");
+            canTriggered = false;
+        }
     }
 
-    void DodgeCometCounter()
+    public static int DodgeCometCounter()
     {
-        cometDodge += 1;
+        return CountDodge += 1;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
-        GameEvents.current.OnMoneyChange -= DodgeCometCounter;
+        canTriggered = true;
     }
 }
