@@ -10,14 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 4020949819075030598}
   - component: {fileID: 4020949819075030597}
-  - component: {fileID: 4020949819075030651}
   - component: {fileID: 4855741523774276778}
+  - component: {fileID: 4020949819075030651}
+  - component: {fileID: 9097752055528030786}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4020949819075030598
 Transform:
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4020949819075030650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.29, y: -2.21, z: -0.96106}
-  m_LocalScale: {x: 0.092629686, y: 0.092629686, z: 0.092629686}
+  m_LocalScale: {x: 0.097464316, y: 0.1102222, z: 0.097464316}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4020949819075030651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4020949819075030650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &4855741523774276778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +111,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.855667, y: 12.198851}
   m_EdgeRadius: 0
+--- !u!114 &4020949819075030651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020949819075030650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9097752055528030786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020949819075030650}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5bddc44444fa40a0fc8b1af8483a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerTransform: {fileID: 0}
+  coinMoveSpeed: 15

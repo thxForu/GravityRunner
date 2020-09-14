@@ -4,16 +4,19 @@ using UnityEngine.Events;
 
 public class Director : MonoBehaviour
 {
-    private readonly bool _canSpawnCoins = true;
+    private bool _canSpawnCoins = true;
 
-    private readonly bool _canSpawnRockets = true;
+    private bool _canSpawnRockets = true;
+    private bool _canSpawnPowerUps = true;
+
     public int chanceSaw;
 
     public int increaseDifficulty = -100;
-    public int DefaultDifficulty = -100;
+    public int defaultDifficulty = -100;
     
     public UnityEvent spawnCoinsEvent;
     public UnityEvent spawnRocketEvent;
+    public UnityEvent spawnPowerUpsEvent;
 
     public int timeForSpawn = 35; //average time when something must happening 35 seconds
 
@@ -21,27 +24,34 @@ public class Director : MonoBehaviour
     {
         StartCoroutine(SpawnComets());
         StartCoroutine(SpawnCoins());
+        StartCoroutine(SpawnPowerUps());
     }
 
     private IEnumerator SpawnComets()
     {
         yield return new WaitForSeconds(15);
-        while (true)
-        {
-            if (_canSpawnRockets)
-                spawnRocketEvent.Invoke();
-            yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
-        }
+        
+        if (_canSpawnRockets)
+            spawnRocketEvent.Invoke(); 
+        yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
+        StartCoroutine(SpawnComets());
     }
 
     private IEnumerator SpawnCoins()
     {
-        while (true)
-        {
-            if (_canSpawnCoins)
-                spawnCoinsEvent.Invoke();
-            yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
-        }
+        if (_canSpawnCoins)
+            spawnCoinsEvent.Invoke();
+        yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
+        StartCoroutine(SpawnCoins());
+    }
+
+    private IEnumerator SpawnPowerUps()
+    {
+        yield return new WaitForSeconds(7);
+        if (_canSpawnPowerUps)
+            spawnPowerUpsEvent.Invoke();
+        yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
+        StartCoroutine(SpawnPowerUps());
     }
 
     private int GetDifficulty()
@@ -50,9 +60,8 @@ public class Director : MonoBehaviour
     }
     public int GetChanceSaw(int minChanceSaw = -100, int maxChanceSaw = 100, int changeChanceSaw = 0)
     {
-        increaseDifficulty = DefaultDifficulty + Random.Range(0, GetDifficulty());
-        chanceSaw = Random.Range(minChanceSaw + changeChanceSaw + increaseDifficulty,
-            maxChanceSaw + increaseDifficulty);
+        increaseDifficulty = defaultDifficulty + Random.Range(0, GetDifficulty());
+        chanceSaw = Random.Range(minChanceSaw + changeChanceSaw + increaseDifficulty, maxChanceSaw);
         return chanceSaw;
     }
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Platform
   - Saw
+  - Coin
+  - CoinDetector
   layers:
   - Default
   - TransparentFX

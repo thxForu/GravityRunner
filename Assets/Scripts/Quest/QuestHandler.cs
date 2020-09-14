@@ -29,23 +29,33 @@ public class QuestHandler : MonoBehaviour
             }
             if (quest[i].isDone)
             {
-                starsImages[i].sprite = completeStartImage.sprite;
                 taskImages[i].sprite = completeTaskImage.sprite;
                 pauseTaskImages[i].sprite = completeTaskImage.sprite;
             }
         }
+        UpdateUIStar();
     }
 
+    private void UpdateUIStar()
+    {
+        for (var i = 0; i < CheckForComplete(); i++)
+            starsImages[i].sprite = completeStartImage.sprite;
+    }
     public bool CheckAll()
     {
-        var completeAll = 0;
-        foreach (var q in quest)
-            if (q.isDone)
-                completeAll++;
-
-        if (completeAll == 3)
+        if (CheckForComplete() == 3)
             return true;
         
         return false;
+    }
+
+    private int CheckForComplete()
+    {
+        var numberComplete = 0;
+        foreach (var q in quest)
+            if (q.isDone)
+                numberComplete += 1;
+        
+        return numberComplete;
     }
 }

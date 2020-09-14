@@ -14,7 +14,6 @@ public class DodgeSaw : MonoBehaviour
         if (col.CompareTag("Player")&& canTriggered)
         {
             DodgeSawCounter();
-            Debug.Log("SAW COUNTER");
             canTriggered = false;
         }
     }

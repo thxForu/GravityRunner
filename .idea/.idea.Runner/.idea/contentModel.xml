@@ -128,6 +128,10 @@
             <e p="SawRotate.cs" t="Include" />
           </e>
           <e p="GameEvents.cs" t="Include" />
+          <e p="PowerUps" t="Include">
+            <e p="CoinMove.cs" t="Include" />
+            <e p="Magnet.cs" t="Include" />
+          </e>
           <e p="Quest" t="Include">
             <e p="Quest.cs" t="Include" />
             <e p="QuestGoal.cs" t="Include" />
@@ -136,6 +140,7 @@
           </e>
           <e p="Spawners" t="Include">
             <e p="CoinSpawner.cs" t="Include" />
+            <e p="PowerUpsSpawner.cs" t="Include" />
             <e p="RocketSpawner.cs" t="Include" />
             <e p="TestManager.cs" t="Include" />
           </e>

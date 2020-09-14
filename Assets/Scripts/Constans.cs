@@ -12,6 +12,7 @@ public static class Constans
     public const string ALL_EARNED_MONEY = "AllMoney"; // All earned money for all time 
     public const string DODGE_SAWS = "AllDodgeSaws"; // All dodge saw for all time
     public const string DODGE_COMETS = "AllDodgeComets"; //All dodge comet for all time
-    
-    
+
+    public const string LEVEL_MAGNET = "LevelMagnet"; 
+
 }

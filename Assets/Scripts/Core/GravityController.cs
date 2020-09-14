@@ -14,7 +14,7 @@ public class GravityController : MonoBehaviour
     private Rigidbody2D _rb;
     private bool _top;
 
-    private bool _thrusted;
+    private bool _canThrust;
 
     private void Start()
     {
@@ -33,9 +33,10 @@ public class GravityController : MonoBehaviour
     {
         StartCoroutine(ChangeGravity(timeStart/secondsDivideBy));
     }
-    public IEnumerator ChangeGravity(float timeForChangeRotate)
+
+    private IEnumerator ChangeGravity(float timeForChangeRotate)
     {
-        _thrusted = false;
+        _canThrust = false;
         if (timeStart >= 0.2)
         {
             if (_top)
@@ -43,10 +44,10 @@ public class GravityController : MonoBehaviour
             else
                 _rb.AddForce(transform.up * ((1 + timeStart) * thrust), ForceMode2D.Impulse);
 
-            _thrusted = true;
+            _canThrust = true;
         }
 
-        if (!_thrusted)
+        if (!_canThrust)
         {
             if (_top)
                 _rb.AddForce(transform.up * (-1 * microThrust), ForceMode2D.Impulse);

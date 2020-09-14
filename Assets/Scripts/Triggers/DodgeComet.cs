@@ -15,7 +15,6 @@ public class DodgeComet : MonoBehaviour
         if (col.CompareTag("Player") && canTriggered)
         {
             DodgeCometCounter();
-            Debug.Log("Comet COUNTER");
             canTriggered = false;
         }
     }

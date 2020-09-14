@@ -20,8 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/CoinsPrefab_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/CoinsPrefab_5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/LongPlatform Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/LongPlatform Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/LongPlatformWithSaw Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/LongPlatformWithSaw Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatformWithSaw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatformWithSaw.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/ShortPlatform Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/ShortPlatform Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constans.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constans.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +75,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/13/efd2c2de/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/35/193ac1b9/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/64/95c27961/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/bd/b8537881/UInt32.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/d0/d165687b/Camera.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -86,21 +105,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TestGravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Saw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Constans.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" />
@@ -108,9 +121,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Constans.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CoinMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
       </list>
     </option>
   </component>
@@ -192,7 +215,9 @@
       <workItem from="1599641320185" duration="25859000" />
       <workItem from="1599934402441" duration="625000" />
       <workItem from="1600003338152" duration="170000" />
-      <workItem from="1600003548189" duration="5580000" />
+      <workItem from="1600003548189" duration="5993000" />
+      <workItem from="1600016363928" duration="6943000" />
+      <workItem from="1600057831184" duration="9713000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
