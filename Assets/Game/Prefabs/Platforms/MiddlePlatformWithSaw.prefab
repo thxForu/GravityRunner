@@ -427,6 +427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effector
       objectReference: {fileID: 0}
+    - target: {fileID: 4895197845997360673, guid: 4a8f1f707c8fbc549ae924b917947a8c,
+        type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 5226955497568554454, guid: 4a8f1f707c8fbc549ae924b917947a8c,
         type: 3}
       propertyPath: m_Size.y
