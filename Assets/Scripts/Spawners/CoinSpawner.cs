@@ -4,9 +4,8 @@ using UnityEngine;
 public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _playerTrans;
-
-
-    public List<GameObject> coins; //List of coins
+    
+    public List<GameObject> prefabsForSpawn; //List of coins prefab
 
     private void Start()
     {
@@ -16,8 +15,8 @@ public class CoinSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        var coinsSelector = Random.Range(0, coins.Count);
+        var coinsSelector = Random.Range(0, prefabsForSpawn.Count);
         var position = _playerTrans.transform.position;
-        Instantiate(coins[coinsSelector], new Vector3(position.x + 20, position.y), transform.rotation);
+        Instantiate(prefabsForSpawn[coinsSelector], new Vector3(position.x + 20, position.y), transform.rotation);
     }
 }
