@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CinemachineScene.unity
     guid: d09c4e4ff7be97f44a0f7d2e833971b4
+  - enabled: 0
+    path: Assets/Scenes/StartSceneWOT.unity
+    guid: 02a8d416d5b8c99459f69914d45d6c36
+  - enabled: 0
+    path: Assets/Scenes/GameSceneWOT.unity
+    guid: 1cb48f1ca4b88ec438cfb4320b83a708
   m_configObjects: {}
