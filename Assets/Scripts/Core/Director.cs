@@ -5,11 +5,12 @@ using UnityEngine.Events;
 public class Director : MonoBehaviour
 {
     private bool _canSpawnCoins = true;
-
     private bool _canSpawnRockets = true;
     private bool _canSpawnPowerUps = true;
-
+    private bool _canDoFaults = false;
+    
     public int chanceSaw;
+    public int chanceFaults;
 
     public int increaseDifficulty = -100;
     public int defaultDifficulty = -100;
@@ -25,6 +26,7 @@ public class Director : MonoBehaviour
         StartCoroutine(SpawnComets());
         StartCoroutine(SpawnCoins());
         StartCoroutine(SpawnPowerUps());
+        StartCoroutine(WaitForDoFaults());
     }
 
     private IEnumerator SpawnComets()
@@ -36,6 +38,12 @@ public class Director : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
         StartCoroutine(SpawnComets());
     }
+
+    private IEnumerator WaitForDoFaults()
+    {
+        yield return new WaitForSeconds(5);
+        _canDoFaults = true;
+    } 
 
     private IEnumerator SpawnCoins()
     {
@@ -63,5 +71,17 @@ public class Director : MonoBehaviour
         increaseDifficulty = defaultDifficulty + Random.Range(0, GetDifficulty());
         chanceSaw = Random.Range(minChanceSaw + changeChanceSaw + increaseDifficulty, maxChanceSaw);
         return chanceSaw;
+    }
+
+    public bool DoFault(int minChanceFaults = -100, int maxChanceFaults = 100, int changeChanceFaults = 0)
+    {
+        if (_canDoFaults)
+        {
+            increaseDifficulty = defaultDifficulty + Random.Range(0, GetDifficulty());
+            chanceFaults = Random.Range(minChanceFaults + changeChanceFaults + increaseDifficulty, maxChanceFaults);
+            return chanceFaults > 50;
+        }
+
+        return false;
     }
 }
