@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class TabGroup : MonoBehaviour
 {
-    public List<GameObject> objectsToSawp;
-    public List<TabButton> tabButtons;
+    public List<GameObject> objectsToSpawn;
+    private List<TabButton> tabButtons;
 
     //public Sprite TabActive, TabHover, TabIdle;
     public TabButton selectedTab;
@@ -41,7 +41,7 @@ public class TabGroup : MonoBehaviour
         ResetTabs();
         //button.Background.sprite = TabActive;
         var index = button.transform.GetSiblingIndex();
-        for (var i = 0; i < objectsToSawp.Count; i++) objectsToSawp[i].SetActive(i == index);
+        for (var i = 0; i < objectsToSpawn.Count; i++) objectsToSpawn[i].SetActive(i == index);
     }
 
     public void ResetTabs()
