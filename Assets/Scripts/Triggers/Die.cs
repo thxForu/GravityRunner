@@ -57,10 +57,10 @@ public class Die : MonoBehaviour
         if (_deathPoint > PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE))
             PlayerPrefs.SetInt(Constans.PLAYER_HIGH_SCORE, _deathPoint);
         
-        PlayerPrefs.SetInt(Constans.MAX_MONEY,maxCristalCollected);
-        PlayerPrefs.SetInt(Constans.ALL_EARNED_MONEY,_allEarnedCrystals+_deathCrystals);
-        PlayerPrefs.SetInt(Constans.CURRENT_MONEY, PlayerPrefs.GetInt(Constans.CURRENT_MONEY) + _deathCrystals);
-        PlayerPrefs.SetInt(Constans.DODGE_SAWS,PlayerPrefs.GetInt(Constans.DODGE_SAWS)+_dodgeSaw);
+        PlayerPrefs.SetInt(Constans.MAX_MONEY,maxCristalCollected); //max money made of the run 
+        PlayerPrefs.SetInt(Constans.ALL_EARNED_MONEY,_allEarnedCrystals+_deathCrystals); //All money that play earn of all runs 
+        PlayerPrefs.SetInt(Constans.CURRENT_MONEY, PlayerPrefs.GetInt(Constans.CURRENT_MONEY) + _deathCrystals); // current money for shopping
+        PlayerPrefs.SetInt(Constans.DODGE_SAWS,PlayerPrefs.GetInt(Constans.DODGE_SAWS)+_dodgeSaw); 
         PlayerPrefs.SetInt(Constans.DODGE_COMETS,PlayerPrefs.GetInt(Constans.DODGE_COMETS)+_dodgeComet);
     }
     
