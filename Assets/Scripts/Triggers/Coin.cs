@@ -2,7 +2,6 @@
 
 public class Coin : MonoBehaviour
 {
-    //TODO add listener or some shit\\\ this not normal with static;
     private CoinMove _coinMove;
     private void OnEnable()
     {
@@ -21,7 +20,7 @@ public class Coin : MonoBehaviour
         }
         if (col.tag.Equals("Player"))
         {
-            MoneyManager.AddCoins(1);
+            MoneyManager.Instance.AddCoins(1);
             GameEvents.current.MoneyChange();
             Destroy(gameObject);
         }

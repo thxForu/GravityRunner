@@ -1,11 +1,18 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
     public static int Coins;
+    public static MoneyManager Instance;
 
     [SerializeField] private TMP_Text coinsCounter;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public int GetCoins()
     {
@@ -16,10 +23,16 @@ public class MoneyManager : MonoBehaviour
     {
         Coins = value;
     }
-    public static void AddCoins(int value)
+    public void AddCoins(int value)
     {
         Coins += value;
     }
+
+    public void AddCoinsAndSave(int value)
+    {
+        PlayerPrefs.SetInt(Constans.CURRENT_MONEY,PlayerPrefs.GetInt(Constans.CURRENT_MONEY)+value);
+    }
+    
 
 
     private void Start()
