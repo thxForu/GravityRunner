@@ -1,7 +1,5 @@
-﻿﻿using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class GravityController : MonoBehaviour
 {
@@ -69,7 +67,6 @@ public class GravityController : MonoBehaviour
     }
     private void Rotate()
     {
-        //animRotation.SetBool("Rotate", _top == false);
         transform.localScale *= new Vector2(1,-1);
     }
 }
