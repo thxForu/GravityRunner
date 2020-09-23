@@ -22,201 +22,8 @@
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRotation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRotation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Assets.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Assets.index.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Sprite Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Style Sheets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/LICENSE.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/README.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/README.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Samples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Samples/TimeframeUIExample.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Samples/TimeframeUIExample.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Samples/TimeframeUIExample.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Samples/TimeframeUIExample.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Attributes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Attributes/Vector2RangeAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Attributes/Vector2RangeAttributes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Attributes/Vector2RangeDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Attributes/Vector2RangeDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Compatibilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Compatibilities/NameofCompatibility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Compatibilities/NameofCompatibility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Compatibilities/Vector2IntCompatibility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Compatibilities/Vector2IntCompatibility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/EnumerableExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/EnumerableExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/FieldInfoExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/FieldInfoExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/RectTransformExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/RectTransformExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/SerializedPropertyExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/Extensions/SerializedPropertyExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/SerializedPropertyManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/SerializedPropertyManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/TimeframeUI.Scripts.Helper.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Helper/TimeframeUI.Scripts.Helper.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Stats.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/Stats.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUI.Scripts.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUI.Scripts.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUIEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Scripts/TimeframeUIEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests/Editor/StatsTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests/Editor/StatsTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests/Editor/TimeframeUI.Tests.Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/Tests/Editor/TimeframeUI.Tests.Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/TimeframeUI.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TimeframeUI/TimeframeUI.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Documentation/Translucent UI.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Documentation/Translucent UI.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucencyEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucencyEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUICameraEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUICameraEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUICameraMobileEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUICameraMobileEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIStartup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIStartup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Materials/m3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Rotate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Rotate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Terrain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/Materials/sydney_terrain.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/Materials/sydney_terrain.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/Materials/terrain1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/Materials/terrain1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/sydney_terrain.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/sydney_terrain.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/terrain1.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/SceneResources/Texture/terrain1.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/TranslucentUI.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/ExampleScenes/TranslucentUI.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlur.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlur.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlurMobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlurMobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/Translucency.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/Translucency.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/Translucency.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/Translucency.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUICamera.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUICamera.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUICameraMobile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUICameraMobile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUIGlobal.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Scripts/TranslucentUIGlobal.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Player.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Player.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Magnet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Magnet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatformWithSaw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/MiddlePlatformWithSaw.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/ShortPlatformWithSaw Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Platforms/ShortPlatformWithSaw Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,29 +92,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Saw.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Constans.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CoinMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
       </list>
     </option>
   </component>
@@ -395,7 +204,9 @@
       <workItem from="1600144253561" duration="8439000" />
       <workItem from="1600237576136" duration="3887000" />
       <workItem from="1600316267858" duration="7229000" />
-      <workItem from="1600784025461" duration="2448000" />
+      <workItem from="1600784025461" duration="3689000" />
+      <workItem from="1600795752452" duration="1754000" />
+      <workItem from="1600853229534" duration="9212000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -460,6 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="431" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599760027711" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600872187121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600872187121" />
     <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1599910586981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -553,15 +368,15 @@
     </state>
     <state x="815" y="241" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599673232988" />
     <state x="815" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597077744240" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1600004926722">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1600872171758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600004926722" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600872171758" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597683925467" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1599759944526">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1600872187122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599759944526" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600872187122" />
     <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597871386343" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596127247424" />
     <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1597859719546">
@@ -582,15 +397,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597077730398" />
-    <state x="2216" y="0" width="1512" height="1027" key="dock-window-1" timestamp="1600004685576">
+    <state x="2161" y="0" width="1490" height="1027" key="dock-window-1" timestamp="1600854159786">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2216" y="0" width="1512" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600004685576" />
+    <state x="2161" y="0" width="1490" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600854159786" />
     <state x="507" y="47" width="1221" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1598109814263" />
     <state x="750" y="125" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1599803873607" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600377296867">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600805730938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600377296867" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600805730938" />
+    <state x="682" y="433" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600854524388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="433" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600854524388" />
   </component>
 </project>
