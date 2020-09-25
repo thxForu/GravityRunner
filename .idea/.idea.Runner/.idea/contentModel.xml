@@ -15,6 +15,55 @@
               <e p="UnityAPIWrapper.cs" t="Include" />
             </e>
           </e>
+          <e p="LeanTween" t="Include">
+            <e p="Editor" t="Include">
+              <e p="LeanTweenDocumentationEditor.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Archived" t="Include">
+                <e p="2dUnlitWithFade.shader" t="Include" />
+                <e p="OldGUIExamplesCS.cs" t="Include" />
+                <e p="TestingPunch.cs" t="Include" />
+                <e p="TestingRigidbodyCS.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Following.cs" t="Include" />
+                <e p="GeneralAdvancedTechniques.cs" t="Include" />
+                <e p="GeneralBasic.cs" t="Include" />
+                <e p="GeneralBasics2d.cs" t="Include" />
+                <e p="GeneralCameraShake.cs" t="Include" />
+                <e p="GeneralEasingTypes.cs" t="Include" />
+                <e p="GeneralEventsListeners.cs" t="Include" />
+                <e p="GeneralSequencer.cs" t="Include" />
+                <e p="GeneralSimpleUI.cs" t="Include" />
+                <e p="GeneralUISpace.cs" t="Include" />
+                <e p="LogoCinematic.cs" t="Include" />
+                <e p="PathBezier.cs" t="Include" />
+                <e p="PathBezier2d.cs" t="Include" />
+                <e p="PathSpline.cs" t="Include" />
+                <e p="PathSpline2d.cs" t="Include" />
+                <e p="PathSplineEndless.cs" t="Include" />
+                <e p="PathSplinePerformance.cs" t="Include" />
+                <e p="PathSplines.cs" t="Include" />
+                <e p="PathSplineTrack.cs" t="Include" />
+                <e p="TestingUnitTests.cs" t="Include" />
+                <e p="TestingZLegacy.cs" t="Include" />
+                <e p="TestingZLegacyExt.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Framework" t="Include">
+              <e p="LeanAudio.cs" t="Include" />
+              <e p="LeanSmooth.cs" t="Include" />
+              <e p="LeanTest.cs" t="Include" />
+              <e p="LeanTween.cs" t="Include" />
+              <e p="LeanTweenExt.cs" t="Include" />
+              <e p="LTDescr.cs" t="Include" />
+              <e p="LTDescrOptional.cs" t="Include" />
+              <e p="LTSeq.cs" t="Include" />
+            </e>
+            <e p="License.txt" t="Include" />
+            <e p="ReadMe.txt" t="Include" />
+          </e>
           <e p="TextMesh Pro" t="Include">
             <e p="Fonts" t="Include">
               <e p="LiberationSans - OFL.txt" t="Include" />

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
@@ -34,5 +35,10 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDisable()
+    {
+        Destroy(gameObject);
     }
 }

@@ -21,9 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/LeanTween/Examples/Material/Futoro_PersonSprites.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/LeanTween/Examples/Material/Futoro_PersonSprites.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ObjectDestroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ObjectDestroyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/2f/4aa99eac/Action.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.0/Runtime/PostProcessing/CinemachinePostProcessing.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ObjectDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Parallax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/3b/617d0e10/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,7 +92,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TaskManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/SawRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/TestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/TestGravityController.cs" />
@@ -90,7 +99,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/LongClick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Saw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HighScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" />
@@ -104,19 +112,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CoinMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LeanTween/Framework/LeanTween.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ObjectDestroyer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
       </list>
     </option>
   </component>
@@ -206,7 +218,8 @@
       <workItem from="1600316267858" duration="7229000" />
       <workItem from="1600784025461" duration="3689000" />
       <workItem from="1600795752452" duration="1754000" />
-      <workItem from="1600853229534" duration="9212000" />
+      <workItem from="1600853229534" duration="12737000" />
+      <workItem from="1601043999014" duration="7862000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -238,6 +251,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
@@ -397,12 +413,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597077730398" />
-    <state x="2161" y="0" width="1490" height="1027" key="dock-window-1" timestamp="1600854159786">
+    <state x="2366" y="0" width="1490" height="1027" key="dock-window-1" timestamp="1601047474093">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2161" y="0" width="1490" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600854159786" />
+    <state x="2366" y="0" width="1490" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601047474093" />
     <state x="507" y="47" width="1221" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1598109814263" />
     <state x="750" y="125" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1599803873607" />
+    <state x="465" y="167" width="1490" height="1027" key="dock-window-2" timestamp="1601048869334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="465" y="167" width="1490" height="1027" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601048869334" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1601044081394">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601044081394" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600805730938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

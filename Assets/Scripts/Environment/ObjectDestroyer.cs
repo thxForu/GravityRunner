@@ -4,7 +4,7 @@ namespace Environment
 {
     public class ObjectDestroyer : MonoBehaviour
     {
-        public GameObject destroyPoint;
+        private GameObject destroyPoint;
 
         private void Start()
         {
