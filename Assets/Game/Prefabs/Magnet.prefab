@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinDetectorObj: {fileID: 0}
+  MagnetImage: {fileID: 3557373041373394973, guid: 65cc56d0d68769545bf3db4e0bc40854,
+    type: 3}
 --- !u!212 &1153924100861411689
 SpriteRenderer:
   m_ObjectHideFlags: 0

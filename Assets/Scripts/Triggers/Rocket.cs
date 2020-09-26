@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Rocket : MonoBehaviour
@@ -20,7 +19,6 @@ public class Rocket : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _diePanel = GameObject.Find("GameController");
         _dieScript = _diePanel.GetComponent<Die>();
-
     }
     
     private void FixedUpdate()

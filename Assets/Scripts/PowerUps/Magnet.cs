@@ -8,12 +8,20 @@ public class Magnet : MonoBehaviour
     [SerializeField] private GameObject coinDetectorObj;
 
     private float _levelMagnet;
+    public GameObject MagnetImage;
+    private GameObject magnetUiPosition;
 
+
+    private SpriteRenderer sprite;
     private CapsuleCollider2D coinDetectorCollider2D;
     // Start is called before the first frame update
     private void Start()
     {
+        
         coinDetectorObj = GameObject.Find("CoinDetector");
+        magnetUiPosition = GameObject.Find("MagnetUIPosition");
+
+        sprite = GetComponent<SpriteRenderer>();
         coinDetectorCollider2D = coinDetectorObj.GetComponent<CapsuleCollider2D>();
         coinDetectorCollider2D.enabled = false;
         _levelMagnet = PlayerPrefs.GetInt(Constans.LEVEL_MAGNET);
@@ -23,16 +31,19 @@ public class Magnet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            StartCoroutine(ActivateCoin(10));
+            sprite.color = Color.clear;
+            StartCoroutine(ActivateCoin(7+(3*_levelMagnet)));
         }
-        
     }
 
     private IEnumerator ActivateCoin(float durationMagnet)
     {
         coinDetectorCollider2D.enabled = true;
-        yield return new WaitForSeconds(durationMagnet);
+        var newMagnetImage = Instantiate (MagnetImage, new Vector2(magnetUiPosition.transform.position.x, magnetUiPosition.transform.position.y), Quaternion.identity); 
+        newMagnetImage.transform.SetParent(magnetUiPosition.transform);
+        yield return new WaitForSeconds(2);
+        Destroy(newMagnetImage.gameObject);
+        Destroy(gameObject);
         coinDetectorCollider2D.enabled = false;
     }
 }
