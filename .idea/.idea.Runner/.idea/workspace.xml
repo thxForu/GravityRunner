@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Magnet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Magnet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/LeanTween/Framework/LeanTween.cs" />
@@ -123,6 +120,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
       </list>
     </option>
   </component>
@@ -214,7 +212,8 @@
       <workItem from="1600853229534" duration="12737000" />
       <workItem from="1601043999014" duration="9509000" />
       <workItem from="1601126420169" duration="5813000" />
-      <workItem from="1601132374623" duration="3768000" />
+      <workItem from="1601132374623" duration="4569000" />
+      <workItem from="1601725382057" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>

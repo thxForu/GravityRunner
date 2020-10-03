@@ -41,7 +41,7 @@ public class Magnet : MonoBehaviour
         coinDetectorCollider2D.enabled = true;
         var newMagnetImage = Instantiate (MagnetImage, new Vector2(magnetUiPosition.transform.position.x, magnetUiPosition.transform.position.y), Quaternion.identity); 
         newMagnetImage.transform.SetParent(magnetUiPosition.transform);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(durationMagnet);
         Destroy(newMagnetImage.gameObject);
         Destroy(gameObject);
         coinDetectorCollider2D.enabled = false;
