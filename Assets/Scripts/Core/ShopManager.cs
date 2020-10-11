@@ -12,13 +12,13 @@ public class ShopManager : MonoBehaviour
     {
         Instance = this;
     }
-    void Start()
+
+    private void Start()
     {
         UpdateMoneyInShopUI();
     }
-
     public void UpdateMoneyInShopUI()
     {
-        moneyInShopText.text = PlayerPrefs.GetInt(Constans.CURRENT_MONEY) + " C.";
+        moneyInShopText.text = PlayerPrefs.GetInt(Constans.CURRENT_MONEY).ToString();
     }
 }

@@ -50,7 +50,7 @@ public class ShopItem : MonoBehaviour
         itemLevel = PlayerPrefs.GetInt(itemType.ToString());
         print(itemLevel);
         itemLevelText.text = "Level. " + itemLevel;
-        itemPriceText.text = itemPrice*itemLevel + " C.";
+        itemPriceText.text = (itemPrice * itemLevel).ToString();
 
         if (itemLevel == itemLevelMax)
         {

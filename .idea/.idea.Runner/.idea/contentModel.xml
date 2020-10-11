@@ -179,7 +179,9 @@
           <e p="GameEvents.cs" t="Include" />
           <e p="PowerUps" t="Include">
             <e p="CoinMove.cs" t="Include" />
+            <e p="Combo.cs" t="Include" />
             <e p="Magnet.cs" t="Include" />
+            <e p="Shild.cs" t="Include" />
           </e>
           <e p="Quest" t="Include">
             <e p="Quest.cs" t="Include" />

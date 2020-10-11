@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class Director : MonoBehaviour
 {
@@ -29,6 +31,35 @@ public class Director : MonoBehaviour
         StartCoroutine(WaitForDoFaults());
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            StartCoroutine(StartBossTime());
+        }
+    }
+
+    public IEnumerator StartBossTime()
+    {
+        spawnRocketEvent.Invoke();
+        spawnCoinsEvent.Invoke();
+        yield return new WaitForSeconds(0.5f);
+        spawnCoinsEvent.Invoke();
+        spawnRocketEvent.Invoke();
+        yield return new WaitForSeconds(0.5f);
+        spawnRocketEvent.Invoke();
+        spawnCoinsEvent.Invoke();
+        yield return new WaitForSeconds(0.5f);
+        spawnRocketEvent.Invoke();
+        yield return new WaitForSeconds(2f);
+        spawnRocketEvent.Invoke();
+        spawnRocketEvent.Invoke();
+        spawnCoinsEvent.Invoke();
+        yield return new WaitForSeconds(1f);
+        spawnCoinsEvent.Invoke();
+
+    }
+    #region Courutines
     private IEnumerator SpawnComets()
     {
         yield return new WaitForSeconds(15);
@@ -38,13 +69,6 @@ public class Director : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
         StartCoroutine(SpawnComets());
     }
-
-    private IEnumerator WaitForDoFaults()
-    {
-        yield return new WaitForSeconds(5);
-        _canDoFaults = true;
-    } 
-
     private IEnumerator SpawnCoins()
     {
         if (_canSpawnCoins)
@@ -52,7 +76,6 @@ public class Director : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
         StartCoroutine(SpawnCoins());
     }
-
     private IEnumerator SpawnPowerUps()
     {
         yield return new WaitForSeconds(7);
@@ -61,7 +84,14 @@ public class Director : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, timeForSpawn));
         StartCoroutine(SpawnPowerUps());
     }
+    private IEnumerator WaitForDoFaults()
+    {
+        yield return new WaitForSeconds(5);
+        _canDoFaults = true;
+    }
+    #endregion
 
+    #region Methods
     private int GetDifficulty()
     {
         return DistanceCounter.DistanceCount / 15;
@@ -72,7 +102,6 @@ public class Director : MonoBehaviour
         chanceSaw = Random.Range(minChanceSaw + changeChanceSaw + increaseDifficulty, maxChanceSaw);
         return chanceSaw;
     }
-
     public bool DoFault(int minChanceFaults = -100, int maxChanceFaults = 100, int changeChanceFaults = 0)
     {
         if (_canDoFaults)
@@ -84,4 +113,6 @@ public class Director : MonoBehaviour
 
         return false;
     }
+    #endregion
+
 }

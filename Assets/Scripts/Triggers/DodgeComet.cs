@@ -23,9 +23,4 @@ public class DodgeComet : MonoBehaviour
     {
         return CountDodge += 1;
     }
-
-    private void OnDisable()
-    {
-        canTriggered = true;
-    }
 }

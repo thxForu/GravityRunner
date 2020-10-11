@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/GameScreen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/GameScreen.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/DistanceCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TabButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/Combo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScalerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Particle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,6 +65,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/13/efd2c2de/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity Projects/Runner/Assets/Scripts/Core/Director.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/35/193ac1b9/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/64/95c27961/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,16 +110,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CoinMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TabGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GravityController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/LeanTween/Framework/LeanTween.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/CoinSpawner.cs" />
@@ -121,6 +125,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Combo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
       </list>
     </option>
   </component>
@@ -213,7 +221,10 @@
       <workItem from="1601043999014" duration="9509000" />
       <workItem from="1601126420169" duration="5813000" />
       <workItem from="1601132374623" duration="4569000" />
-      <workItem from="1601725382057" duration="375000" />
+      <workItem from="1601725382057" duration="3982000" />
+      <workItem from="1602095015966" duration="2288000" />
+      <workItem from="1602347559162" duration="1637000" />
+      <workItem from="1602422872891" duration="2816000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
