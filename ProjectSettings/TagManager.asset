@@ -8,6 +8,7 @@ TagManager:
   - Saw
   - Coin
   - CoinDetector
+  - Shield
   layers:
   - Default
   - TransparentFX

@@ -19,16 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="">
+    <list default="true" id="0f811bb0-821c-4c6d-a869-73660b62157c" name="Default Changelist" comment="add boss time mechanic">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/GameScreen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/GameScreen.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constans.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constans.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MoneyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestGoal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +72,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/Die.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/FpsCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/13/efd2c2de/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity Projects/Runner/Assets/Scripts/Core/Director.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CC8EC07-5538-4164-96E5-DB5D391208AC/35/193ac1b9/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/64/95c27961/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StatsHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,9 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Editor/TranslucentUIEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Assets/TranslucentUI/Resources/Shaders/CameraBlurMobile.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/PlatformGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/ObjectDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/RocketSpawner.cs" />
@@ -106,10 +109,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Constans.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CoinMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PowerUpsSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/PlatformGenerator.cs" />
@@ -123,12 +124,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ObjectDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Rocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Combo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/ShopManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeComet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/DodgeSaw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Shild.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Magnet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Constans.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Shield.cs" />
       </list>
     </option>
   </component>
@@ -224,7 +230,10 @@
       <workItem from="1601725382057" duration="3982000" />
       <workItem from="1602095015966" duration="2288000" />
       <workItem from="1602347559162" duration="1637000" />
-      <workItem from="1602422872891" duration="2816000" />
+      <workItem from="1602422872891" duration="5870000" />
+      <workItem from="1602681460964" duration="184000" />
+      <workItem from="1602681854785" duration="1827000" />
+      <workItem from="1604261477591" duration="1862000" />
     </task>
     <task id="LOCAL-00001" summary="Update resolution on background and others sprite &#10;Add start screen">
       <created>1596988712874</created>
@@ -254,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597872592524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add boss time mechanic">
+      <created>1602434840274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602434840274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +296,8 @@
     <MESSAGE value="Add dodge comet quest" />
     <MESSAGE value="Add dodge comet" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="add boss time mechanic" />
+    <option name="LAST_COMMIT_MESSAGE" value="add boss time mechanic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600784251332">
@@ -380,20 +397,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1600246167516" />
-    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1601127434477">
+    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1602436242352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601127434477" />
+    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602436242352" />
     <state x="2647" y="244" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1598455465395" />
     <state x="815" y="241" key="RollbackChangesDialog" timestamp="1599673232988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="815" y="241" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599673232988" />
     <state x="815" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597077744240" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1600872171758">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602435228503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600872171758" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602435228503" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597683925467" />
     <state x="807" y="434" key="VCS.ChangelistChooser" timestamp="1601136862777">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -10,11 +10,10 @@ public class Magnet : MonoBehaviour
     private float _levelMagnet;
     public GameObject MagnetImage;
     private GameObject magnetUiPosition;
-
-
+    
     private SpriteRenderer sprite;
     private CapsuleCollider2D coinDetectorCollider2D;
-    // Start is called before the first frame update
+
     private void Start()
     {
         
@@ -24,7 +23,7 @@ public class Magnet : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         coinDetectorCollider2D = coinDetectorObj.GetComponent<CapsuleCollider2D>();
         coinDetectorCollider2D.enabled = false;
-        _levelMagnet = PlayerPrefs.GetInt(Constans.LEVEL_MAGNET);
+        _levelMagnet = PlayerPrefs.GetInt(Constants.LEVEL_MAGNET);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

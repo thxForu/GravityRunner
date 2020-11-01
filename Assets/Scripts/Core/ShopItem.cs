@@ -32,7 +32,7 @@ public class ShopItem : MonoBehaviour
 
     public void BuyItem()
     {
-        var currentMoney = PlayerPrefs.GetInt(Constans.CURRENT_MONEY);
+        var currentMoney = PlayerPrefs.GetInt(Constants.CURRENT_MONEY);
         if (itemLevel < itemLevelMax && currentMoney >= itemPrice*itemLevel)
         {
             MoneyManager.Instance.AddCoinsAndSave(-itemPrice*itemLevel);

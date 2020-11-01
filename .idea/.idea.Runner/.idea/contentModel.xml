@@ -154,7 +154,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Constans.cs" t="Include" />
+          <e p="Constants.cs" t="Include" />
           <e p="Core" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="Director.cs" t="Include" />
@@ -181,7 +181,7 @@
             <e p="CoinMove.cs" t="Include" />
             <e p="Combo.cs" t="Include" />
             <e p="Magnet.cs" t="Include" />
-            <e p="Shild.cs" t="Include" />
+            <e p="Shield.cs" t="Include" />
           </e>
           <e p="Quest" t="Include">
             <e p="Quest.cs" t="Include" />

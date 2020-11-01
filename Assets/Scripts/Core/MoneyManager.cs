@@ -30,7 +30,7 @@ public class MoneyManager : MonoBehaviour
 
     public void AddCoinsAndSave(int value)
     {
-        PlayerPrefs.SetInt(Constans.CURRENT_MONEY,PlayerPrefs.GetInt(Constans.CURRENT_MONEY)+value);
+        PlayerPrefs.SetInt(Constants.CURRENT_MONEY,PlayerPrefs.GetInt(Constants.CURRENT_MONEY)+value);
     }
     
 

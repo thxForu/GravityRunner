@@ -19,6 +19,6 @@ public class ShopManager : MonoBehaviour
     }
     public void UpdateMoneyInShopUI()
     {
-        moneyInShopText.text = PlayerPrefs.GetInt(Constans.CURRENT_MONEY).ToString();
+        moneyInShopText.text = PlayerPrefs.GetInt(Constants.CURRENT_MONEY).ToString();
     }
 }

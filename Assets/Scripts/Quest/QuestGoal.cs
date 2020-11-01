@@ -13,8 +13,8 @@ public class QuestGoal
 
     public static int PlayerLevel
     {
-        get => PlayerPrefs.GetInt(Constans.PLAYER_LEVEL);
-        set => PlayerPrefs.SetInt(Constans.PLAYER_LEVEL, value);
+        get => PlayerPrefs.GetInt(Constants.PLAYER_LEVEL);
+        set => PlayerPrefs.SetInt(Constants.PLAYER_LEVEL, value);
     }
 
     //return random quest from enum
@@ -88,10 +88,10 @@ public class QuestGoal
 
     public bool NewRecord()
     {
-        if (PlayerPrefs.HasKey(Constans.PLAYER_HIGH_SCORE))
-            return DistanceCounter.DistanceCount > PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE);
+        if (PlayerPrefs.HasKey(Constants.PLAYER_HIGH_SCORE))
+            return DistanceCounter.DistanceCount > PlayerPrefs.GetInt(Constants.PLAYER_HIGH_SCORE);
         else
-            PlayerPrefs.SetInt(Constans.PLAYER_HIGH_SCORE,DistanceCounter.DistanceCount);
+            PlayerPrefs.SetInt(Constants.PLAYER_HIGH_SCORE,DistanceCounter.DistanceCount);
         
         return false;
     }

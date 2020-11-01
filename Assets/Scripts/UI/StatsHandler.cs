@@ -10,12 +10,12 @@ public class StatsHandler: MonoBehaviour
     
     private void Start()
     {
-        _highScore = GetInt(Constans.PLAYER_HIGH_SCORE);
+        _highScore = GetInt(Constants.PLAYER_HIGH_SCORE);
         bestScore.text = "Best Score: " + _highScore;
-        dodgeSaw.text = "Dodge Saw: " + GetInt(Constans.DODGE_SAWS);
-        dodgeComet.text = "Dodge Comet: " + GetInt(Constans.DODGE_COMETS);
-        maxCristal.text = "Max cristal collected: " + GetInt(Constans.MAX_MONEY);
-        totalCristal.text = "Total cristal collected: " + GetInt(Constans.ALL_EARNED_MONEY);
+        dodgeSaw.text = "Dodge Saw: " + GetInt(Constants.DODGE_SAWS);
+        dodgeComet.text = "Dodge Comet: " + GetInt(Constants.DODGE_COMETS);
+        maxCristal.text = "Max cristal collected: " + GetInt(Constants.MAX_MONEY);
+        totalCristal.text = "Total cristal collected: " + GetInt(Constants.ALL_EARNED_MONEY);
         highScore.text = "HS: " + _highScore;
     }
 

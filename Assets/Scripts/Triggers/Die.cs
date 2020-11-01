@@ -52,25 +52,25 @@ public class Die : MonoBehaviour
         _dodgeSaw = DodgeSaw.DodgeSawCounter();
         _dodgeComet = DodgeComet.DodgeCometCounter();
         _deathCrystals = _moneyManager.GetCoins(); //coins when player Die
-        int maxCristalCollected = _deathCrystals > PlayerPrefs.GetInt(Constans.MAX_MONEY)? _deathCrystals:PlayerPrefs.GetInt(Constans.MAX_MONEY);
-        _allEarnedCrystals = PlayerPrefs.GetInt(Constans.ALL_EARNED_MONEY);
-        if (_deathPoint > PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE))
-            PlayerPrefs.SetInt(Constans.PLAYER_HIGH_SCORE, _deathPoint);
+        int maxCristalCollected = _deathCrystals > PlayerPrefs.GetInt(Constants.MAX_MONEY)? _deathCrystals:PlayerPrefs.GetInt(Constants.MAX_MONEY);
+        _allEarnedCrystals = PlayerPrefs.GetInt(Constants.ALL_EARNED_MONEY);
+        if (_deathPoint > PlayerPrefs.GetInt(Constants.PLAYER_HIGH_SCORE))
+            PlayerPrefs.SetInt(Constants.PLAYER_HIGH_SCORE, _deathPoint);
         
-        PlayerPrefs.SetInt(Constans.MAX_MONEY,maxCristalCollected); //max money made of the run 
-        PlayerPrefs.SetInt(Constans.ALL_EARNED_MONEY,_allEarnedCrystals+_deathCrystals); //All money that play earn of all runs 
-        PlayerPrefs.SetInt(Constans.CURRENT_MONEY, PlayerPrefs.GetInt(Constans.CURRENT_MONEY) + _deathCrystals); // current money for shopping
-        PlayerPrefs.SetInt(Constans.DODGE_SAWS,PlayerPrefs.GetInt(Constans.DODGE_SAWS)+_dodgeSaw); 
-        PlayerPrefs.SetInt(Constans.DODGE_COMETS,PlayerPrefs.GetInt(Constans.DODGE_COMETS)+_dodgeComet);
+        PlayerPrefs.SetInt(Constants.MAX_MONEY,maxCristalCollected); //max money made of the run 
+        PlayerPrefs.SetInt(Constants.ALL_EARNED_MONEY,_allEarnedCrystals+_deathCrystals); //All money that play earn of all runs 
+        PlayerPrefs.SetInt(Constants.CURRENT_MONEY, PlayerPrefs.GetInt(Constants.CURRENT_MONEY) + _deathCrystals); // current money for shopping
+        PlayerPrefs.SetInt(Constants.DODGE_SAWS,PlayerPrefs.GetInt(Constants.DODGE_SAWS)+_dodgeSaw); 
+        PlayerPrefs.SetInt(Constants.DODGE_COMETS,PlayerPrefs.GetInt(Constants.DODGE_COMETS)+_dodgeComet);
     }
     
     private void ShowDiePanel()
     {
         diePanel.SetActive(true);
-        highScoreText.text = "High score: " + PlayerPrefs.GetInt(Constans.PLAYER_HIGH_SCORE);
+        highScoreText.text = "High score: " + PlayerPrefs.GetInt(Constants.PLAYER_HIGH_SCORE);
         scoreText.text = "Score: "+(_deathPoint).ToString();
         dieCoinsText.text = "Collected: "+_deathCrystals.ToString();
-        totalCoinsText.text = "Total crystals: "+PlayerPrefs.GetInt(Constans.CURRENT_MONEY).ToString();
+        totalCoinsText.text = "Total crystals: "+PlayerPrefs.GetInt(Constants.CURRENT_MONEY).ToString();
     }
 
     public void ShowHomeCanvas()

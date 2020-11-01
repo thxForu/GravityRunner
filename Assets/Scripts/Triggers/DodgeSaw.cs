@@ -18,7 +18,7 @@ public class DodgeSaw : MonoBehaviour
         }
     }
 
-    public static int  DodgeSawCounter()
+    public static int DodgeSawCounter()
     {
         return CountDodge += 1;
     }
