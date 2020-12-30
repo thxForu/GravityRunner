@@ -5,9 +5,8 @@ namespace Spawners
     public class RocketSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject playerTrans;
-
-        public GameObject _rocket;
-        public Transform[] PointBetwine;
+        [SerializeField] private GameObject _rocket;
+        [SerializeField] private Transform[] PointBetwine;
 
 
         private void Start()

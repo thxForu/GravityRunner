@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class ShopItem : MonoBehaviour
@@ -38,6 +35,7 @@ public class ShopItem : MonoBehaviour
             MoneyManager.Instance.AddCoinsAndSave(-itemPrice*itemLevel);
             itemLevel++;
             PlayerPrefs.SetInt(itemType.ToString(), itemLevel);
+            
 
             ShopManager.Instance.UpdateMoneyInShopUI();
             UpdateItemUI();
@@ -48,7 +46,6 @@ public class ShopItem : MonoBehaviour
     private void UpdateItemUI()
     {
         itemLevel = PlayerPrefs.GetInt(itemType.ToString());
-        print(itemLevel);
         itemLevelText.text = "Level. " + itemLevel;
         itemPriceText.text = (itemPrice * itemLevel).ToString();
 
@@ -62,5 +59,5 @@ public class ShopItem : MonoBehaviour
 
 public enum ShopItems
 {
-    Magnet, SomeOtherShit
+    Magnet, Shield
 }

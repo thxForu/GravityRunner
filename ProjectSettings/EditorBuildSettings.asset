@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: f47428d1f6e278b4ca5de560753f2e17
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/EndlessRun.unity
     guid: 495356451981f6fc69ca2e049a331eaa
   - enabled: 0
     path: Assets/Scenes/CinemachineScene.unity

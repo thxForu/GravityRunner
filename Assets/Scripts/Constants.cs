@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public static class Constants
+﻿public static class Constants
 {
     //
     public const string PLAYER_LEVEL = "PlayerLevel";
@@ -16,6 +12,6 @@ public static class Constants
     public const string DODGE_COMETS = "AllDodgeComets"; //All dodge comet for all time
     
     //PowerUps
-    public const string LEVEL_MAGNET = "LevelMagnet"; 
-    public const string LEVEL_SHIELD = "LevelShield";
+    public const string LEVEL_MAGNET = "Magnet"; 
+    public const string LEVEL_SHIELD = "Shield";
 }

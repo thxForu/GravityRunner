@@ -185,22 +185,22 @@
           </e>
           <e p="Quest" t="Include">
             <e p="Quest.cs" t="Include" />
-            <e p="QuestGoal.cs" t="Include" />
             <e p="QuestHandler.cs" t="Include" />
             <e p="QuestManager.cs" t="Include" />
           </e>
           <e p="Spawners" t="Include">
             <e p="CoinSpawner.cs" t="Include" />
             <e p="PowerUpsSpawner.cs" t="Include" />
+            <e p="QuestGoal.cs" t="Include" />
             <e p="RocketSpawner.cs" t="Include" />
             <e p="TestManager.cs" t="Include" />
           </e>
           <e p="Triggers" t="Include">
             <e p="Coin.cs" t="Include" />
+            <e p="Comet.cs" t="Include" />
             <e p="Die.cs" t="Include" />
             <e p="DodgeComet.cs" t="Include" />
             <e p="DodgeSaw.cs" t="Include" />
-            <e p="Rocket.cs" t="Include" />
             <e p="Saw.cs" t="Include" />
           </e>
           <e p="UI" t="Include">

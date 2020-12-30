@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318265864699125093}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.132, y: 0.977, z: -0.21301311}
+  m_LocalPosition: {x: 1.53, y: 1.75, z: -0.21301311}
   m_LocalScale: {x: 0.11945709, y: 0.11945709, z: 0.11945709}
   m_Children: []
   m_Father: {fileID: 3838028921875489744}
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointToMove: 0
+  timeToMove: 0
 --- !u!61 &7923060309735359020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3441889853264465149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: -0.2, z: -0.21301311}
+  m_LocalPosition: {x: 0.6, y: -0.2, z: -0.21301311}
   m_LocalScale: {x: 0.11945709, y: 0.11945709, z: 0.11945709}
   m_Children: []
   m_Father: {fileID: 3838028921875489744}
@@ -218,6 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointToMove: 0
+  timeToMove: 0
 --- !u!61 &1505515225071464829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -271,7 +275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6949023191392299469}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.99, y: 1.11, z: -0.21301311}
+  m_LocalPosition: {x: -3.81, y: 1.88, z: -0.21301311}
   m_LocalScale: {x: 0.11945709, y: 0.11945709, z: 0.11945709}
   m_Children: []
   m_Father: {fileID: 3838028921875489744}
@@ -340,6 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointToMove: 0
+  timeToMove: 0
 --- !u!61 &8588578306140032196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -393,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7448106918206889894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.087, y: -0.067, z: -0.21301311}
+  m_LocalPosition: {x: -2.83, y: -0.067, z: -0.21301311}
   m_LocalScale: {x: 0.11945709, y: 0.11945709, z: 0.11945709}
   m_Children: []
   m_Father: {fileID: 3838028921875489744}
@@ -462,6 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointToMove: 0
+  timeToMove: 0
 --- !u!61 &23767318422256058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -619,6 +627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e25e32e186a384ea0650479ca56ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointToMove: 0
+  timeToMove: 0
 --- !u!61 &4356960170068868671
 BoxCollider2D:
   m_ObjectHideFlags: 0

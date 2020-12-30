@@ -15,7 +15,12 @@ public class Saw : MonoBehaviour
     {
         if (col.tag.Equals("Player"))
         {
-            _dieScript.PlayerDie();
+            if (Shield.isShilded == false)
+            {
+                _dieScript.PlayerDie();
+            }
+            Shield.isShilded = false;
+            Shield.pieceOfShield -= 1;
         }
     }
 }
