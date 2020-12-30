@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8351861049457324545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8351861049457324551}
+  - component: {fileID: 8351861049457324550}
+  - component: {fileID: 8351861049457324548}
+  - component: {fileID: 8351861049457324549}
+  - component: {fileID: 8351861049457324570}
+  - component: {fileID: 8351861049457324571}
+  - component: {fileID: 8351861049457324568}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8351861049457324551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6525888, y: 0.5634247, z: -6.68562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8351861049457324550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d395f16386b0c48a826a28e177c2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diePanel: {fileID: 0}
+  questPanel: {fileID: 0}
+  dieStatsPanel: {fileID: 0}
+  homeCanvas: {fileID: 0}
+  restartButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  highScoreText: {fileID: 0}
+  scoreText: {fileID: 0}
+  dieCoinsText: {fileID: 0}
+  totalCoinsText: {fileID: 0}
+--- !u!114 &8351861049457324548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732d2c2dfb1fda74c8c58cc811d78d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  SpawnCoinsEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SpawnRocketEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SpawnPowerUpsEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CoinSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8351861049457324549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8561c09e787096c4ebb32e622492166d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsCounter: {fileID: 0}
+--- !u!114 &8351861049457324570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3002da68df215a745a11711487df6802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8351861049457324571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4befcead3f4e30f49ba174433909a9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  taskImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pauseTaskImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  starsImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  completeTaskImage: {fileID: 0}
+  completeStartImage: {fileID: 0}
+--- !u!114 &8351861049457324568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351861049457324545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b68dcf5380bf646859a1e22019167a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  - isActive: 0
+    isDone: 0
+    goal:
+      goalType: 0
+      coinsRequiredAmount: 15
+      metersRequiredAmount: 40
+      dodgeCometRequiredAmount: 2
+      dodgeSawRequiredAmount: 3
+  questHandler: {fileID: 8351861049457324571}
+  questGoal:
+    goalType: 0
+    coinsRequiredAmount: 15
+    metersRequiredAmount: 40
+    dodgeCometRequiredAmount: 2
+    dodgeSawRequiredAmount: 3
+  questWindow: {fileID: 0}
+  titleText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pauseTitleText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playerLevelText: {fileID: 0}
+  pausePlayerLevelText: {fileID: 0}
