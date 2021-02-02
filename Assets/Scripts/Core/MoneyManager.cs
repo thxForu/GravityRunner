@@ -13,6 +13,13 @@ public class MoneyManager : MonoBehaviour
     {
         Instance = this;
     }
+    
+    private void Start()
+    {
+        GameEvents.current.OnMoneyChange += UpdateCoins;
+        SetCoins(0);
+        UpdateCoins();
+    }
 
     public int GetCoins()
     {
@@ -27,20 +34,12 @@ public class MoneyManager : MonoBehaviour
     {
         Coins += value;
     }
-
     public void AddCoinsAndSave(int value)
     {
         PlayerPrefs.SetInt(Constants.CURRENT_MONEY,PlayerPrefs.GetInt(Constants.CURRENT_MONEY)+value);
     }
     
-
-
-    private void Start()
-    {
-        GameEvents.current.OnMoneyChange += UpdateCoins;
-        SetCoins(0);
-        UpdateCoins();
-    }
+    
 
     public void UpdateCoins()
     {
