@@ -4,8 +4,8 @@ using UnityEngine;
 public class GravityController : MonoBehaviour
 {
     public static float timeStart;
+    
     [SerializeField] private Animator animator;
-
     [SerializeField] private float secondsDivideBy = 7;
     [SerializeField] private float thrust = 2.0f;
     [SerializeField] private float microThrust = 0.1f;
